@@ -5,6 +5,23 @@ namespace ConsoleApplication1
 {
     internal class Program
     {
+
+        static int[] triple(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = array[i] * 3;
+            }
+
+            return array;
+        }
+
+        static int factorial(int n)
+        {
+            if (n == 0) return 1;
+            
+            return n * factorial(n - 1);
+        }
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -25,8 +42,19 @@ namespace ConsoleApplication1
             
             Car car = new Car();
             Console.WriteLine("My car's color is " + car.getColor());
+            
+            int[] testArray = {1,2,3,4,5,6,7,8,9,10};
+            
+            triple(testArray);
 
+            for (int i = 0; i < testArray.Length; i++)
+            {
+                Console.WriteLine(testArray[i]);
+            }
 
+            Console.WriteLine("The factorial of 5 is " + factorial(5));
+
+            
 
 
         }
