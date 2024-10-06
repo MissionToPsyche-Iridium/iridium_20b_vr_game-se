@@ -54,7 +54,10 @@ namespace ConsoleApplication1
 
             Console.WriteLine("The factorial of 5 is " + factorial(5));
 
-            
+            Calculator calculator = new Calculator();
+
+            Console.WriteLine("1 + 2 = " + calculator.add(1, 2));
+            Console.WriteLine("2 * 59 = " + calculator.Multiply(2, 59));
 
 
         }
