@@ -33,14 +33,15 @@ namespace ConsoleApplication1
 
         public int peek()
         {
-            return stack[stack.Length - 1];
+            return stack[size - 1];
         }
 
         public int pop()
         {
+            int rval = stack[size - 1];
             stack[size - 1] = 999;
             size--;
-            return stack[stack.Length - 1];
+            return rval;
         }
 
         public void push(int n)
@@ -60,6 +61,7 @@ namespace ConsoleApplication1
             {
                 Console.Write(stack[i] + " ");
             }
+            Console.WriteLine();
         }
         
         

@@ -5,3 +5,10 @@ C:\Users\Kongo\RiderProjects\ConsoleApplication1\ConsoleApplication1\obj\Debug\C
 C:\Users\Kongo\RiderProjects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
 C:\Users\Kongo\RiderProjects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\Kongo\RiderProjects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Kongo\RiderProjects\iridium_20b_vr_game-se\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Kongo\RiderProjects\iridium_20b_vr_game-se\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Kongo\RiderProjects\iridium_20b_vr_game-se\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\Users\Kongo\RiderProjects\iridium_20b_vr_game-se\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kongo\RiderProjects\iridium_20b_vr_game-se\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Kongo\RiderProjects\iridium_20b_vr_game-se\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Kongo\RiderProjects\iridium_20b_vr_game-se\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

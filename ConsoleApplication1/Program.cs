@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace ConsoleApplication1
 
@@ -60,10 +61,40 @@ namespace ConsoleApplication1
             Console.WriteLine("2 * 59 = " + calculator.Multiply(2, 59));
 
             MyStack myStack = new MyStack(1);
-
+            Debug.Assert(myStack.getSize() == 1, "stack size incorrect");
             myStack.push(2);
+            Debug.Assert(myStack.getSize() == 2, "stack size incorrect");
             myStack.printStack();
+            myStack.push(99);
+            Debug.Assert(myStack.getSize() == 3, "stack size incorrect");
+            myStack.printStack();
+            Console.WriteLine(myStack.getSize());
+            myStack.push(2);myStack.push(3);myStack.push(4);
+            Debug.Assert(myStack.getSize() == 6, "stack size incorrect");
+            myStack.push(6);myStack.push(1);myStack.push(4);
+            Debug.Assert(myStack.getSize() == 9, "stack size incorrect");
+            myStack.push(222);myStack.push(244);myStack.push(662);
+            Debug.Assert(myStack.getSize() == 12, "stack size incorrect");
+            Console.WriteLine(myStack.getSize());
+            myStack.printStack();
+            Console.WriteLine(myStack.peek());
+            Console.WriteLine(myStack.pop());
+            myStack.printStack();
+            Console.WriteLine(myStack.getSize());
+
+            Debug.Assert(myStack.getSize() == 11, "stack size incorrect");
             
+            Debug.Assert(myStack.peek() == 244, "stack size incorrect");
+            Debug.Assert(myStack.pop() == 244, "stack size incorrect");
+            Debug.Assert(myStack.getSize() == 10, "stack size incorrect");
+
+
+
+
+
+
+
+
         }
     }
 }
