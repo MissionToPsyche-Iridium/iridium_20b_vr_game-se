@@ -27,7 +27,7 @@ namespace ConsoleApplication1
             Console.WriteLine("Hello World!");
             //this is a comment
             Console.WriteLine("What's your name?");
-            String name = Console.ReadLine();
+            string name = Console.ReadLine();
             Console.WriteLine("Hi " + name);
 
             string[] cars = { "Ford Mustang", "Toyota Supra", "Chevrolet Corvette" };
@@ -59,7 +59,11 @@ namespace ConsoleApplication1
             Console.WriteLine("1 + 2 = " + calculator.add(1, 2));
             Console.WriteLine("2 * 59 = " + calculator.Multiply(2, 59));
 
+            MyStack myStack = new MyStack(1);
 
+            myStack.push(2);
+            myStack.printStack();
+            
         }
     }
 }
