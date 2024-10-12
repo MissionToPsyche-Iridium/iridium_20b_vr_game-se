@@ -24,7 +24,7 @@ public class BoxCollider : MonoBehaviour
     {
         if (collision.gameObject.layer == 3)
         {
-            logic.addScore();
+            logic.addScore(1);
 
         }
         
