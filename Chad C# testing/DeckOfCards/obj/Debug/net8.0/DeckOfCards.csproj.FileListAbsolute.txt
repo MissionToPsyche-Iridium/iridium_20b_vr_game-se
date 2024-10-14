@@ -1,0 +1,14 @@
+C:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\obj\Debug\net8.0\DeckOfCards.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\obj\Debug\net8.0\DeckOfCards.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\obj\Debug\net8.0\DeckOfCards.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\obj\Debug\net8.0\DeckOfCards.csproj.CoreCompileInputs.cache
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\bin\Debug\net8.0\DeckOfCards.exe
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\bin\Debug\net8.0\DeckOfCards.deps.json
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\bin\Debug\net8.0\DeckOfCards.runtimeconfig.json
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\bin\Debug\net8.0\DeckOfCards.dll
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\bin\Debug\net8.0\DeckOfCards.pdb
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\obj\Debug\net8.0\DeckOfCards.dll
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\obj\Debug\net8.0\refint\DeckOfCards.dll
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\obj\Debug\net8.0\DeckOfCards.pdb
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\obj\Debug\net8.0\DeckOfCards.genruntimeconfig.cache
+c:\Users\valen\OneDrive\Documents\Programming\C Sharp\workspace\DeckOfCards\obj\Debug\net8.0\ref\DeckOfCards.dll
