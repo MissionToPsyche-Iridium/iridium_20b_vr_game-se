@@ -1,0 +1,38 @@
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+        //string
+        string name = "John";
+        Console.WriteLine(name);
+
+        //int
+        int myNum = 15;
+        Console.WriteLine(myNum);
+
+        //assign value later
+        int myNum;
+        myNum = 15;
+        Console.WriteLine(myNum);  
+
+        //declare multiple variables w/ comma seperated list
+        int x = 5, y = 6, z = 50;
+        Console.WriteLine(x + y + z);
+
+
+
+        int myInt = 10;
+        double myDouble = 5.25;
+        bool myBool = true;
+
+        Console.WriteLine(Convert.ToString(myInt));    // Convert int to string
+        Console.WriteLine(Convert.ToDouble(myInt));    // Convert int to double
+        Console.WriteLine(Convert.ToInt32(myDouble));  // Convert double to int
+        Console.WriteLine(Convert.ToString(myBool));   // Convert bool to string
+    }
+  }
+}

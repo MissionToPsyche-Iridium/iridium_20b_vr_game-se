@@ -1,0 +1,14 @@
+/Users/shannonray/Desktop/Csharp/Array/bin/Debug/net8.0/Array
+/Users/shannonray/Desktop/Csharp/Array/bin/Debug/net8.0/Array.deps.json
+/Users/shannonray/Desktop/Csharp/Array/bin/Debug/net8.0/Array.runtimeconfig.json
+/Users/shannonray/Desktop/Csharp/Array/bin/Debug/net8.0/Array.dll
+/Users/shannonray/Desktop/Csharp/Array/bin/Debug/net8.0/Array.pdb
+/Users/shannonray/Desktop/Csharp/Array/obj/Debug/net8.0/Array.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shannonray/Desktop/Csharp/Array/obj/Debug/net8.0/Array.AssemblyInfoInputs.cache
+/Users/shannonray/Desktop/Csharp/Array/obj/Debug/net8.0/Array.AssemblyInfo.cs
+/Users/shannonray/Desktop/Csharp/Array/obj/Debug/net8.0/Array.csproj.CoreCompileInputs.cache
+/Users/shannonray/Desktop/Csharp/Array/obj/Debug/net8.0/Array.dll
+/Users/shannonray/Desktop/Csharp/Array/obj/Debug/net8.0/refint/Array.dll
+/Users/shannonray/Desktop/Csharp/Array/obj/Debug/net8.0/Array.pdb
+/Users/shannonray/Desktop/Csharp/Array/obj/Debug/net8.0/Array.genruntimeconfig.cache
+/Users/shannonray/Desktop/Csharp/Array/obj/Debug/net8.0/ref/Array.dll
