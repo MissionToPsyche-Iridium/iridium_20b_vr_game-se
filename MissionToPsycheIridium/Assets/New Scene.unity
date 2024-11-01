@@ -3402,17 +3402,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7a7447d7ab8474dfc8c2b40be6131dba,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 858.908
+      value: 877.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a7447d7ab8474dfc8c2b40be6131dba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.659765
+      value: 14.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a7447d7ab8474dfc8c2b40be6131dba,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 172.81438
+      value: 170.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a7447d7ab8474dfc8c2b40be6131dba,
         type: 3}
@@ -3453,6 +3453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Astronaut IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7a7447d7ab8474dfc8c2b40be6131dba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9672,7 +9677,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 205, y: 380}
+  m_AnchoredPosition: {x: 204.99994, y: 380}
   m_SizeDelta: {x: 181.8, y: 35.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1398664391
