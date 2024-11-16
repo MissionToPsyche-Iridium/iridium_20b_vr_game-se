@@ -259,6 +259,34 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &69547643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8424183402809739671, guid: a2e8ee2005c074447b929af42b7f5068,
+    type: 3}
+  m_PrefabInstance: {fileID: 260805759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &69547647
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69547643}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6987222532461930031, guid: 1e0aa385a29277f44abdc9f94a611727, type: 3}
 --- !u!1001 &193392182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -270,7 +298,12 @@ PrefabInstance:
     - target: {fileID: 1644074631896904345, guid: eb91affb984e740dbb2082626ba96efb,
         type: 3}
       propertyPath: m_Name
-      value: VR_Hand_Blue_Left
+      value: leftHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644074631896904345, guid: eb91affb984e740dbb2082626ba96efb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8848131633249631744, guid: eb91affb984e740dbb2082626ba96efb,
         type: 3}
@@ -322,10 +355,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9012437147824848432, guid: eb91affb984e740dbb2082626ba96efb,
+        type: 3}
+      propertyPath: m_Name
+      value: leftHand
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9012437147824848432, guid: eb91affb984e740dbb2082626ba96efb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1806962575}
   m_SourcePrefab: {fileID: 100100000, guid: eb91affb984e740dbb2082626ba96efb, type: 3}
 --- !u!4 &193392183 stripped
 Transform:
@@ -391,15 +433,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8424183402809739671, guid: a2e8ee2005c074447b929af42b7f5068,
+        type: 3}
+      propertyPath: m_Name
+      value: rightHand
+      objectReference: {fileID: 0}
     - target: {fileID: 8913381912547908116, guid: a2e8ee2005c074447b929af42b7f5068,
         type: 3}
       propertyPath: m_Name
-      value: VR_Hand_Blue_Right
+      value: rightHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913381912547908116, guid: a2e8ee2005c074447b929af42b7f5068,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8424183402809739671, guid: a2e8ee2005c074447b929af42b7f5068,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 69547647}
   m_SourcePrefab: {fileID: 100100000, guid: a2e8ee2005c074447b929af42b7f5068, type: 3}
 --- !u!4 &260805760 stripped
 Transform:
@@ -424,7 +480,7 @@ GameObject:
   - component: {fileID: 297631453}
   m_Layer: 0
   m_Name: Right Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2200,7 +2256,7 @@ GameObject:
   - component: {fileID: 1062084107}
   m_Layer: 0
   m_Name: Left Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3044,6 +3100,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1806962571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9012437147824848432, guid: eb91affb984e740dbb2082626ba96efb,
+    type: 3}
+  m_PrefabInstance: {fileID: 193392182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1806962575
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806962571}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6987222532461930031, guid: 1e0aa385a29277f44abdc9f94a611727, type: 3}
 --- !u!1 &2003655823
 GameObject:
   m_ObjectHideFlags: 0
