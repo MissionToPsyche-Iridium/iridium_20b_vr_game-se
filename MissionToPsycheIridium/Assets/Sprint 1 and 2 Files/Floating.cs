@@ -16,6 +16,20 @@ public class Floating : MonoBehaviour
         StartCoroutine(FloatingRoutine());
     }
 
+    private void Update()
+    {
+
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "leftHand" || other.gameObject.name == "rightHand")
+        {
+            gameObject.SetActive(false);
+            Debug.Log("item set inactive");
+        }
+    }
+
     IEnumerator FloatingRoutine()
     {
         while (true)
