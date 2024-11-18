@@ -3610,7 +3610,7 @@ Transform:
   m_GameObject: {fileID: 372399542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.091249995, y: 2.43, z: -0.53459996}
+  m_LocalPosition: {x: -0.09197, y: 2.5561, z: -0.5346}
   m_LocalScale: {x: 0.043042768, y: 0.43042776, z: 0.043042768}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6483,7 +6483,7 @@ Transform:
   m_GameObject: {fileID: 762761757}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalPosition: {x: 0, y: 4.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7428,7 +7428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 0}
-  m_MoveSpeed: 5
+  m_MoveSpeed: 5.28
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -15186,9 +15186,9 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 0.65
+  m_Height: 3.43
   m_Radius: 0
-  m_SlopeLimit: 20.41
+  m_SlopeLimit: 39.17
   m_StepOffset: 0
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0
@@ -15208,7 +15208,7 @@ MonoBehaviour:
   jumpButton: {fileID: 3752219735478092160, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   charController: {fileID: 2123205088}
-  jumpHeight: 2
+  jumpHeight: 2.96
   jumpButtonReleased: 0
 --- !u!114 &2123205090
 MonoBehaviour:

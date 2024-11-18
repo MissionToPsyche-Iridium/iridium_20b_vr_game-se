@@ -26,7 +26,7 @@ public class Floating : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.name == "leftHand" || other.gameObject.name == "rightHand" || other.gameObject.tag == "Player")
+        if (other.gameObject.name == "leftHand" || other.gameObject.name == "rightHand" || other.gameObject.tag == "Player" ||other.gameObject.name == "player")
         {
             Debug.Log("collision detected, sound played");
             GetComponent<AudioSource>().Play();
@@ -38,7 +38,7 @@ public class Floating : MonoBehaviour
 
     public IEnumerator testing2()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
         gameObject.SetActive(false);
         Debug.Log("item set inactive");
     }
