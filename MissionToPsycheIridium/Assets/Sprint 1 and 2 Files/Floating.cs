@@ -8,12 +8,15 @@ public class Floating : MonoBehaviour
     [SerializeField] private float floatSpeed = 0.5f;
     [SerializeField] private float floatDistance = 0.5f;
     [SerializeField] private float floatDelay = 1f;
+    public AudioClip collect;
 
     void Start()
     {
         floatUp = true;
         GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
         StartCoroutine(FloatingRoutine());
+        GetComponent<AudioSource>().clip = collect;
+        GetComponent<AudioSource>().playOnAwake = false;
     }
 
     private void Update()
@@ -23,11 +26,21 @@ public class Floating : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "leftHand" || other.gameObject.name == "rightHand")
+        if (other.gameObject.name == "leftHand" || other.gameObject.name == "rightHand" || other.gameObject.tag == "Player")
         {
-            gameObject.SetActive(false);
-            Debug.Log("item set inactive");
+            Debug.Log("collision detected, sound played");
+            GetComponent<AudioSource>().Play();
+            StartCoroutine(testing2());
+
+
         }
+    }
+
+    public IEnumerator testing2()
+    {
+        yield return new WaitForSeconds(5);
+        gameObject.SetActive(false);
+        Debug.Log("item set inactive");
     }
 
     IEnumerator FloatingRoutine()
