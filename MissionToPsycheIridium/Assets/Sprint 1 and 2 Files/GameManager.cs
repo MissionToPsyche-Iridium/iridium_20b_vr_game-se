@@ -41,9 +41,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // Prevent gameTime from going below zero
-            gameTime = 0;
-
             // Display the Game Over panel
             if (gameOverPanel != null && !gameOverPanel.activeSelf)
             {
