@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Floating : MonoBehaviour
 {
@@ -9,14 +11,16 @@ public class Floating : MonoBehaviour
     [SerializeField] private float floatDistance = 0.5f;
     [SerializeField] private float floatDelay = 1f;
     public AudioClip collect;
+    public Text score;
 
     void Start()
     {
         floatUp = true;
-        GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
+        GetComponent<Rigidbody>().angularVelocity = UnityEngine.Random.insideUnitSphere * tumble;
         StartCoroutine(FloatingRoutine());
         GetComponent<AudioSource>().clip = collect;
         GetComponent<AudioSource>().playOnAwake = false;
+       
     }
 
     private void Update()
@@ -41,6 +45,15 @@ public class Floating : MonoBehaviour
         yield return new WaitForSeconds(1);
         gameObject.SetActive(false);
         Debug.Log("item set inactive");
+
+        string currScore = score.text;
+
+        int updateScore = Int32.Parse(currScore);
+
+        updateScore++;
+
+
+        score.text = updateScore.ToString();
     }
 
     IEnumerator FloatingRoutine()
