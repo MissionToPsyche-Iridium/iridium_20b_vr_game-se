@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timeTextBox; // Text for timer
     [SerializeField] private GameObject gameOverPanel; // Reference to the game over UI
 
+    private bool isGameOver = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateGameTimer();
+        if (!isGameOver)
+        {
+            UpdateGameTimer();
+        }
+       
     }
 
     private void UpdateGameTimer()
@@ -41,6 +47,15 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            //Timer stops at 0
+            gameTime = 0;
+
+            //Set game over flag
+            isGameOver = true;
+
+            //Reset timer to 0
+            timeTextBox.text = "0:00";
+
             // Display the Game Over panel
             if (gameOverPanel != null && !gameOverPanel.activeSelf)
             {
