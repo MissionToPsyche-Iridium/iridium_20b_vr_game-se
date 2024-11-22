@@ -17,12 +17,12 @@ public class Collection : MonoBehaviour
     {
         if (other.transform.tag == "Metal")
         {
-            Score++;
-            UIscore.text = Score.ToString();
-            AudioSource noise = GetComponent<AudioSource>();
-            noise.Play();
-            Debug.Log(Score);
-            Destroy(other.gameObject);
+            //Score++;
+            //UIscore.text = Score.ToString();
+           // AudioSource noise = GetComponent<AudioSource>();
+            //noise.Play();
+            //Debug.Log(Score);
+           // Destroy(other.gameObject);
         }
     }
 }

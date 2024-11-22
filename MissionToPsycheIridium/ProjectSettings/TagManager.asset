@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Metal
+  - NonVr
   layers:
   - Default
   - TransparentFX
