@@ -13,6 +13,7 @@ public class Floating : MonoBehaviour
     public AudioClip collect;
     public Text score;
     private int collisions;
+    [SerializeField] private int pointValue = 0;
 
     void Start()
     {
@@ -63,7 +64,7 @@ public class Floating : MonoBehaviour
 
         int updateScore = Int32.Parse(currScore);
 
-        updateScore++;
+        updateScore = updateScore + pointValue;
 
 
         score.text = updateScore.ToString();
