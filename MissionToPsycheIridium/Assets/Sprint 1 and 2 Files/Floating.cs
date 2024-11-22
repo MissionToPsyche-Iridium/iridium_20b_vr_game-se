@@ -35,6 +35,7 @@ public class Floating : MonoBehaviour
             Debug.Log("collision detected, sound played");
             GetComponent<AudioSource>().Play();
             StartCoroutine(testing2());
+            Destroy(this.gameObject);
 
 
         }
