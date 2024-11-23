@@ -386,7 +386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9170495
 Transform:
   m_ObjectHideFlags: 0
@@ -548,7 +548,7 @@ Transform:
   m_GameObject: {fileID: 12959803}
   serializedVersion: 2
   m_LocalRotation: {x: -0.061832465, y: 0, z: 0, w: 0.9980866}
-  m_LocalPosition: {x: -0.165, y: 1.107, z: 0.283}
+  m_LocalPosition: {x: -0.268, y: 1.029, z: 0.052}
   m_LocalScale: {x: 0.16, y: 0.6, z: 0.16}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1732,8 +1732,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42204756}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.006294455, z: -0, w: 0.9999802}
-  m_LocalPosition: {x: 0, y: 2.76, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.76, z: 0.332}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7828,7 +7828,7 @@ Transform:
   m_GameObject: {fileID: 378541794}
   serializedVersion: 2
   m_LocalRotation: {x: -0.15771309, y: -0.020343427, z: -0.12630236, w: 0.97916317}
-  m_LocalPosition: {x: -0.317, y: 2.088, z: 0.26}
+  m_LocalPosition: {x: -0.36, y: 2.105, z: 0.177}
   m_LocalScale: {x: 0.16, y: 0.4, z: 0.16}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10995,7 +10995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &543964659
 Transform:
   m_ObjectHideFlags: 0
@@ -11215,7 +11215,7 @@ Transform:
   m_GameObject: {fileID: 554335635}
   serializedVersion: 2
   m_LocalRotation: {x: 0.07660641, y: -0.009881461, z: 0.12754793, w: 0.9888202}
-  m_LocalPosition: {x: 0.37, y: 2.126, z: -0.073}
+  m_LocalPosition: {x: 0.37, y: 2.123, z: -0.053}
   m_LocalScale: {x: 0.16, y: 0.4, z: 0.16}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13658,7 +13658,7 @@ Transform:
   m_GameObject: {fileID: 690922949}
   serializedVersion: 2
   m_LocalRotation: {x: 0.061832465, y: 0, z: 0, w: 0.9980866}
-  m_LocalPosition: {x: 0.279, y: 1.072, z: -0.013}
+  m_LocalPosition: {x: 0.263, y: 1.046, z: -0.087}
   m_LocalScale: {x: 0.16, y: 0.6, z: 0.16}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23339,7 +23339,7 @@ MonoBehaviour:
   floatDistance: 0.5
   floatDelay: 1
   collect: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
-  score: {fileID: 2072662320}
+  score: {fileID: 783418152}
   pointValue: 2
 --- !u!82 &1129334920
 AudioSource:
@@ -23452,7 +23452,7 @@ GameObject:
   - component: {fileID: 1139204173}
   - component: {fileID: 1139204172}
   m_Layer: 0
-  m_Name: nickel-ore-asset (3)
+  m_Name: nickel-ore-asset (2)
   m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23699,7 +23699,7 @@ MonoBehaviour:
   floatDistance: 0.5
   floatDelay: 1
   collect: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
-  score: {fileID: 2072662320}
+  score: {fileID: 783418152}
   pointValue: 2
 --- !u!82 &1139204176
 AudioSource:
@@ -30254,13 +30254,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564295682}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.59134364, y: -0.38770178, z: 0.38770178, w: 0.59134364}
-  m_LocalPosition: {x: 0.064, y: 2.7629986, z: 0.185}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: -0.015, y: 2.7629986, z: 0.193}
   m_LocalScale: {x: 0.3, y: 0.19000001, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2093235253}
-  m_LocalEulerAnglesHint: {x: 90, y: -66.5, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!136 &1564295684
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -38403,7 +38403,7 @@ Transform:
   m_GameObject: {fileID: 2093235250}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.006294455, z: -0, w: 0.9999802}
-  m_LocalPosition: {x: 30.596436, y: -28.531763, z: -194.1998}
+  m_LocalPosition: {x: 29.8, y: -16.41, z: -194.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
