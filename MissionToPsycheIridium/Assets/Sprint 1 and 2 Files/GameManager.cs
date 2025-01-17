@@ -12,6 +12,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel; // Reference to the game over UI
 
     private bool isGameOver = false;
+    //setter and getter for isGameOver using C# Property
+    public bool IsGameOver
+    {
+        get { return isGameOver; }
+        set { isGameOver = value; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +52,7 @@ public class GameManager : MonoBehaviour
 
             timeTextBox.text = gameTimeClock;
         }
+        //need code here to reset timer after restart.  Or a new method?
         else
         {
             //Timer stops at 0
@@ -64,4 +71,5 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
 }
