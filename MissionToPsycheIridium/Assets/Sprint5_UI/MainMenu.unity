@@ -4030,7 +4030,7 @@ GameObject:
   - component: {fileID: 1691419805}
   - component: {fileID: 1691419807}
   - component: {fileID: 1691419806}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

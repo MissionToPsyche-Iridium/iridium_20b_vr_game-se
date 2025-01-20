@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.UI;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float gameTime; // Total game time in seconds
     [SerializeField] private TextMeshProUGUI timeTextBox; // Text for timer
     [SerializeField] private GameObject gameOverPanel; // Reference to the game over UI
+    public Text score;
+    public Text scoreVR;
     private GameObject eventSystem; //reference to EventSystem
 
 
@@ -71,6 +75,10 @@ public class GameManager : MonoBehaviour
 
             //Reset timer to 0
             timeTextBox.text = "0:00";
+
+            ScoreItem.setScore(Int32.Parse(scoreVR.text));
+
+            SceneManager.LoadScene("GameOver");
 
             //disable player input (experiment, this code can be used to disable stuff btw) 
             //but disabling the ISUIM component didn't work to halt player movement
