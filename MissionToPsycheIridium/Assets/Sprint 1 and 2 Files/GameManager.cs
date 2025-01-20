@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float gameTime; // Total game time in seconds
     [SerializeField] private TextMeshProUGUI timeTextBox; // Text for timer
     [SerializeField] private GameObject gameOverPanel; // Reference to the game over UI
+    private GameObject eventSystem; //reference to EventSystem
+
 
     private bool isGameOver = false;
     //setter and getter for isGameOver using C# Property
@@ -27,6 +31,10 @@ public class GameManager : MonoBehaviour
         {
             gameOverPanel.SetActive(false);
         }
+
+        //show mouse cursor for debug (didn't work)
+        //Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
     }
 
     // Update is called once per frame
@@ -63,6 +71,13 @@ public class GameManager : MonoBehaviour
 
             //Reset timer to 0
             timeTextBox.text = "0:00";
+
+            //disable player input (experiment, this code can be used to disable stuff btw) 
+            //but disabling the ISUIM component didn't work to halt player movement
+
+            eventSystem = UnityEngine.GameObject.Find("EventSystem"); //get EventSystem gameObject
+            InputSystemUIInputModule controls = eventSystem.GetComponent<InputSystemUIInputModule>(); //get ISUIM component
+            controls.enabled = false;
 
             // Display the Game Over panel
             if (gameOverPanel != null && !gameOverPanel.activeSelf)
