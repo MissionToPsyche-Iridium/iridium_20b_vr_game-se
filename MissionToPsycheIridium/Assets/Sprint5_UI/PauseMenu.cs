@@ -3,17 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu; 
     public InputActionProperty pressPause;
-    public Text timerText;                
-    public Button resumeButton;           
+    public TMP_Text timerText;                
+    public Button resumeButton;
+    public Transform cameraTransform;      // Reference to the camera
+    public XRRayInteractor leftRay;        // Reference to left ray interactors
+    public XRRayInteractor rightRay;       // Reference to right ray interactors
+    public XRDirectInteractor leftDirect; // Reference to left direct interactor
+    public XRDirectInteractor rightDirect; // Reference to right direct interactor
 
     private bool isPaused = false;         // Tracks when game is paused
     private float gameTime = 0f;           // The game timer
     private float timeScaleBeforePause;    // Stores timer before pausing the game
+   
 
     // Start is called before the first frame update
     void Start()
@@ -61,7 +69,11 @@ public class PauseMenu : MonoBehaviour
     private void PauseGame()
     {
         isPaused = true;
+        PositionPauseMenu(); // Position pause menu in front of the camera
         pauseMenu.SetActive(true); // Show the pause menu
+
+        // Enable ray interactors and disable direct interactors
+        ToggleInteractors(true);
 
         // Stop the game timer by setting timeScale to 0
         timeScaleBeforePause = Time.timeScale; // Save the current timeScale
@@ -73,6 +85,9 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         pauseMenu.SetActive(false); // Hide the pause menu
 
+        // Disable ray interactors and enable direct interactors
+        ToggleInteractors(false);
+
         // Restore the game timer 
         Time.timeScale = timeScaleBeforePause;
     }
@@ -81,6 +96,26 @@ public class PauseMenu : MonoBehaviour
     {
         // Update the timer text 
         timerText.text = $"Time: {gameTime:F2} seconds";
+    }
+
+    private void PositionPauseMenu()
+    {
+        // Position menu a certain distance in front of the camera
+        float distanceFromCamera = 4.0f; 
+        Vector3 position = cameraTransform.position + cameraTransform.forward * distanceFromCamera;
+
+        // Align menu to face the camera
+        pauseMenu.transform.position = position;
+        pauseMenu.transform.rotation = Quaternion.LookRotation(pauseMenu.transform.position - cameraTransform.position);
+    }
+
+    private void ToggleInteractors(bool enableRayInteractors)
+    {
+        if (leftRay != null) leftRay.enabled = enableRayInteractors;
+        if (rightRay != null) rightRay.enabled = enableRayInteractors;
+
+        if (leftDirect != null) leftDirect.enabled = !enableRayInteractors;
+        if (rightDirect != null) rightDirect.enabled = !enableRayInteractors;
     }
 
 }
