@@ -1,0 +1,34 @@
+{
+    "name": "XR Input Actions",
+    "maps": [
+        {
+            "name": "XR Controls",
+            "id": "f69df353-3f6c-4f93-845f-ed207f20bb37",
+            "actions": [
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "47b474a8-504c-4f64-85fb-5a8eae8466d1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ecd42807-6370-43c0-8364-16dbaec273a9",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
