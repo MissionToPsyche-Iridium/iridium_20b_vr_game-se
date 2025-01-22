@@ -1,0 +1,34 @@
+{
+    "name": "Custom Input Actions",
+    "maps": [
+        {
+            "name": "PauseMenu",
+            "id": "9c0b3add-9801-47dd-9732-3073ff6503bb",
+            "actions": [
+                {
+                    "name": "PausePressed",
+                    "type": "Button",
+                    "id": "03488fcb-d381-42c2-a672-a0d0fefe7a6d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b86ab605-31e4-42e8-8893-08cad57d0f62",
+                    "path": "<OculusRemote>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PausePressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
