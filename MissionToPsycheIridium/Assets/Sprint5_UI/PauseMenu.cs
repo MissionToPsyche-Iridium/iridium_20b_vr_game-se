@@ -31,6 +31,9 @@ public class PauseMenu : MonoBehaviour
 
         //Set up listener for resume button
         resumeButton.onClick.AddListener(OnResumeButtonClick);
+
+        //Ensure interactors are off when game starts
+        ToggleInteractors(false);
     }
 
     // Update is called once per frame

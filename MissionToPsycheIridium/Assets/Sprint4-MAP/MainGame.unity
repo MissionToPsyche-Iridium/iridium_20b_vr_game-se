@@ -7519,6 +7519,7 @@ GameObject:
   - component: {fileID: 276320928}
   - component: {fileID: 276320927}
   - component: {fileID: 276320926}
+  - component: {fileID: 276320931}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -7657,6 +7658,39 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &276320931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276320924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440fab0d7030e440087fc00b5f86102d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 276320924}
+  pressPause:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Press Pause
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 3588b4d9-86ff-4235-986f-776b5d5e4df7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7739729183460292464, guid: 59c92e22e31ce4deb9c1082e28628c92,
+      type: 3}
+  timerText: {fileID: 1313822063}
+  resumeButton: {fileID: 2083414070}
+  cameraTransform: {fileID: 757054287}
+  leftRay: {fileID: 1174971722}
+  rightRay: {fileID: 1368688301}
+  leftDirect: {fileID: 1062084107}
+  rightDirect: {fileID: 297631454}
 --- !u!1 &291917835
 GameObject:
   m_ObjectHideFlags: 0
@@ -14098,7 +14132,6 @@ Transform:
   - {fileID: 1947541432}
   - {fileID: 650067842}
   - {fileID: 5646690465705003048}
-  - {fileID: 1860381411}
   - {fileID: 276320925}
   - {fileID: 433184518}
   m_Father: {fileID: 0}
@@ -50629,71 +50662,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855371044}
   m_Mesh: {fileID: -5495902117074765545, guid: e8b0ce9a52f63754dabb3c38210523d1, type: 3}
---- !u!1 &1860381410
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1860381411}
-  - component: {fileID: 1860381412}
-  m_Layer: 0
-  m_Name: PauseMenuManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1860381411
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860381410}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 543964659}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1860381412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860381410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 440fab0d7030e440087fc00b5f86102d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 276320924}
-  pressPause:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Press Pause
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 4a8470ff-e8b6-49e9-98af-9a024f40eacf
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -2343283337192555860, guid: fd24ee48fcda74d27b4f3a8ab62f7103,
-      type: 3}
-  timerText: {fileID: 1313822063}
-  resumeButton: {fileID: 2083414070}
-  cameraTransform: {fileID: 757054287}
-  leftRay: {fileID: 1174971722}
-  rightRay: {fileID: 1368688301}
-  leftDirect: {fileID: 1062084107}
-  rightDirect: {fileID: 297631454}
 --- !u!114 &1864514739
 MonoBehaviour:
   m_ObjectHideFlags: 0
