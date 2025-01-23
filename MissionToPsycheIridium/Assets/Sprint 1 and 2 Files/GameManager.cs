@@ -80,13 +80,6 @@ public class GameManager : MonoBehaviour
 
             SceneManager.LoadScene("GameOver");
 
-            //disable player input (experiment, this code can be used to disable stuff btw) 
-            //but disabling the ISUIM component didn't work to halt player movement
-
-            eventSystem = UnityEngine.GameObject.Find("EventSystem"); //get EventSystem gameObject
-            InputSystemUIInputModule controls = eventSystem.GetComponent<InputSystemUIInputModule>(); //get ISUIM component
-            controls.enabled = false;
-
             // Display the Game Over panel
             if (gameOverPanel != null && !gameOverPanel.activeSelf)
             {
