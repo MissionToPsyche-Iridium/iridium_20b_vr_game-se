@@ -30,7 +30,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
 
         //Set up listener for resume button
-        resumeButton.onClick.AddListener(ResumeGame);
+        resumeButton.onClick.AddListener(OnResumeButtonClick);
     }
 
     // Update is called once per frame
@@ -116,6 +116,11 @@ public class PauseMenu : MonoBehaviour
 
         if (leftDirect != null) leftDirect.enabled = !enableRayInteractors;
         if (rightDirect != null) rightDirect.enabled = !enableRayInteractors;
+    }
+
+    private void OnResumeButtonClick()
+    {
+        ResumeGame();
     }
 
 }
