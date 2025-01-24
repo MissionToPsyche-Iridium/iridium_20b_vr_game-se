@@ -51624,7 +51624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -74.99994, y: 0}
+  m_AnchoredPosition: {x: -75, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886822616
@@ -58843,7 +58843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf16706206d6ec4ba3679e771e355c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpButton: {fileID: 3752219735478092160, guid: c348712bda248c246b8c49b3db54643f,
+  jumpButton: {fileID: 2252323536178931805, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   charController: {fileID: 2123205088}
   jumpHeight: 2.96
