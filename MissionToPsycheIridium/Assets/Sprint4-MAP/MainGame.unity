@@ -31941,6 +31941,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102451702}
   m_Mesh: {fileID: -3329902420748629119, guid: dd8c8dc22c3a7bc4092dc11d1356c3bc, type: 3}
+--- !u!1 &1103166240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103166242}
+  - component: {fileID: 1103166241}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1103166241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103166240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440fab0d7030e440087fc00b5f86102d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 276320924}
+  pauseButton: {fileID: -2343283337192555860, guid: fd24ee48fcda74d27b4f3a8ab62f7103,
+    type: 3}
+  timerText: {fileID: 1313822063}
+  resumeButton: {fileID: 2083414070}
+  cameraTransform: {fileID: 757054287}
+  leftRay: {fileID: 1174971722}
+  rightRay: {fileID: 1368688301}
+  leftDirect: {fileID: 1062084107}
+  rightDirect: {fileID: 297631454}
+--- !u!4 &1103166242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103166240}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2687.838, y: -87.54135, z: -182.4219}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1106137294
 GameObject:
   m_ObjectHideFlags: 0
@@ -61343,3 +61397,4 @@ SceneRoots:
   - {fileID: 9170495}
   - {fileID: 543964659}
   - {fileID: 824351292}
+  - {fileID: 1103166242}
