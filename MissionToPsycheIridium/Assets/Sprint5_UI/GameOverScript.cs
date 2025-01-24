@@ -14,15 +14,14 @@ public class GameOverScript : MonoBehaviour
         scoreNumber.text = ScoreItem.getScore().ToString();
     }
 
-    public void restartGame()
+    public void restartGameButton()
     {
-        //probably load maingame scene from here
+        //enter code to load main game scene here
     }
 
-    public void quitGame()
+    public void exitButton()
     {
-        //probably shift this to credits
-        //then quit
+        //enter code to load credits scene here
     }
 
 
