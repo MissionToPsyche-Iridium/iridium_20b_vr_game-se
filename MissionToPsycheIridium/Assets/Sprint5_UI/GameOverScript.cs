@@ -17,11 +17,13 @@ public class GameOverScript : MonoBehaviour
     public void restartGameButton()
     {
         //enter code to load main game scene here
+        Debug.Log("restart button pressed");
     }
 
     public void exitButton()
     {
         //enter code to load credits scene here
+        Debug.Log("exit button pressed");
     }
 
 

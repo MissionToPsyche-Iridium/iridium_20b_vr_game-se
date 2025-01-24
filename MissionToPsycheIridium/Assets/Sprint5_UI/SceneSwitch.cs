@@ -55,6 +55,10 @@ public class SceneSwitch : MonoBehaviour
         disclaimer.SetActive(true);
     }
 
+    public void goToCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 
     //this code quits the game. This has been confirmed to work in the test build. 
     public void quitGame()
