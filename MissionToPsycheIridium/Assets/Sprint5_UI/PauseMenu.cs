@@ -9,7 +9,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu; 
-    public InputActionProperty pressPause;
+    public InputActionReference pauseButton;
     public TMP_Text timerText;                
     public Button resumeButton;
     public Transform cameraTransform;      // Reference to the camera
@@ -49,12 +49,12 @@ public class PauseMenu : MonoBehaviour
 
     private void OnEnable()
     {
-        pressPause.action.performed += DisplayPause;
+        pauseButton.action.performed += DisplayPause;
     }
 
     private void OnDisable()
     {
-        pressPause.action.performed -= DisplayPause;
+        pauseButton.action.performed -= DisplayPause;
     }
 
     private void DisplayPause(InputAction.CallbackContext context)
