@@ -7671,19 +7671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 276320924}
-  pressPause:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Press Pause
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 3588b4d9-86ff-4235-986f-776b5d5e4df7
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -2343283337192555860, guid: fd24ee48fcda74d27b4f3a8ab62f7103,
-      type: 3}
+  pauseButton: {fileID: 0}
   timerText: {fileID: 1313822063}
   resumeButton: {fileID: 2083414070}
   cameraTransform: {fileID: 757054287}
@@ -23869,6 +23857,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Device Simulator
       objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29491,7 +29484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348fb95e6d47a4b15ae861f96d5cbace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 10
+  gameTime: 100
   timeTextBox: {fileID: 1313822063}
   gameOverPanel: {fileID: 1886822614}
   score: {fileID: 0}
