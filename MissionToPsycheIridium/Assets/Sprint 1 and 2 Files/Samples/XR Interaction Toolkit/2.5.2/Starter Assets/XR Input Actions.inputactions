@@ -2,7 +2,7 @@
     "name": "XR Input Actions",
     "maps": [
         {
-            "name": "XR Controls",
+            "name": "PauseMenu",
             "id": "f69df353-3f6c-4f93-845f-ed207f20bb37",
             "actions": [
                 {
