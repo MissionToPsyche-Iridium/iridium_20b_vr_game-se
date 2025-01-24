@@ -1,13 +1,15 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitch : MonoBehaviour
+public class MainMenuScript : MonoBehaviour
 {
     [SerializeField] GameObject disclaimer;
     [SerializeField] GameObject Tutorial;
     GameObject canvas;
+    private bool isEventMode;
 
     //this starts at the launch of scene
     void Start()
@@ -19,10 +21,11 @@ public class SceneSwitch : MonoBehaviour
 
     //start game being pushed button
     //activates disclaimer "page"
-    public void startGamePushed()
+    public void startGameButton()
     {
         disclaimer.SetActive(true);
         canvas.SetActive(false);
+        isEventMode = false;
     }
 
     //disclaimer continue then opens the tutorial
@@ -33,11 +36,26 @@ public class SceneSwitch : MonoBehaviour
     }
 
     //switches scene to game scene
-    public void switchToGame()
+    public void startGame()
     {
-        
-        SceneManager.LoadScene("MainGame");
+
+        //currently just loads event mode
+        if (isEventMode)
+        {
+            SceneManager.LoadScene("MainGame");
+        } else
+        {
+            SceneManager.LoadScene("MainGame");
+        }
        
+    }
+
+    public void eventModeButton()
+    {
+        //temporary
+        disclaimer.SetActive(true);
+        canvas.SetActive(false);
+        isEventMode = true;
     }
 
 
@@ -61,7 +79,7 @@ public class SceneSwitch : MonoBehaviour
     }
 
     //this code quits the game. This has been confirmed to work in the test build. 
-    public void quitGame()
+    public void exitButton()
     {
         Application.Quit();
     }
