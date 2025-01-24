@@ -98,7 +98,7 @@ public class PauseMenu : MonoBehaviour
     private void UpdateTimerText()
     {
         // Update the timer text 
-        timerText.text = $"Time: {gameTime:F2} seconds";
+        timerText.text = $"{gameTime:F2}";
     }
 
     private void PositionPauseMenu()
