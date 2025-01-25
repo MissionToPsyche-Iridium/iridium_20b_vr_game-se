@@ -7675,6 +7675,7 @@ MonoBehaviour:
   timerText: {fileID: 1313822063}
   resumeButton: {fileID: 2083414070}
   quitButton: {fileID: 0}
+  restartButton: {fileID: 0}
   cameraTransform: {fileID: 757054287}
   leftRay: {fileID: 1174971722}
   rightRay: {fileID: 1368688301}
@@ -31977,6 +31978,7 @@ MonoBehaviour:
   timerText: {fileID: 1313822063}
   resumeButton: {fileID: 2083414070}
   quitButton: {fileID: 1295763540}
+  restartButton: {fileID: 466166435}
   cameraTransform: {fileID: 757054287}
   leftRay: {fileID: 1174971722}
   rightRay: {fileID: 1368688301}

@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     public TMP_Text timerText;                
     public Button resumeButton;
     public Button quitButton;
+    public Button restartButton;
     public Transform cameraTransform;      // Reference to the camera
     public XRRayInteractor leftRay;        // Reference to left ray interactors
     public XRRayInteractor rightRay;       // Reference to right ray interactors
@@ -34,7 +35,11 @@ public class PauseMenu : MonoBehaviour
         //Set up listener for resume button
         resumeButton.onClick.AddListener(OnResumeButtonClick);
 
+        //Set up listener for quit button
         quitButton.onClick.AddListener(OnQuitButtonClick);
+
+        //Set up listener for restart button
+        restartButton.onClick.AddListener(OnRestartButtonClick);
 
         //Ensure interactors are off when game starts
         ToggleInteractors(false);
@@ -133,6 +138,13 @@ public class PauseMenu : MonoBehaviour
     private void OnQuitButtonClick()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    private void OnRestartButtonClick()
+    {
+        Time.timeScale = 1f;
+        gameTime = 0f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
