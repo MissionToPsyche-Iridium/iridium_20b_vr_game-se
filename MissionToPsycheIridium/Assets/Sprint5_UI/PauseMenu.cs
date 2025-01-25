@@ -9,9 +9,9 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseMenu; 
+    public GameObject pauseMenu;
     public InputActionReference pauseButton;
-    public TMP_Text timerText;                
+    public TMP_Text timerText;
     public Button resumeButton;
     public Button quitButton;
     public Button restartButton;
@@ -20,11 +20,11 @@ public class PauseMenu : MonoBehaviour
     public XRRayInteractor rightRay;       // Reference to right ray interactors
     public XRDirectInteractor leftDirect; // Reference to left direct interactor
     public XRDirectInteractor rightDirect; // Reference to right direct interactor
+    public GameManager gameManager; //Reference to the game manager script
 
     private bool isPaused = false;         // Tracks when game is paused
-    private float gameTime = 0f;           // The game timer
-    private float timeScaleBeforePause;    // Stores timer before pausing the game
-   
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,10 +36,10 @@ public class PauseMenu : MonoBehaviour
         resumeButton.onClick.AddListener(OnResumeButtonClick);
 
         //Set up listener for quit button
-        //quitButton.onClick.AddListener(OnQuitButtonClick);
+        quitButton.onClick.AddListener(OnQuitButtonClick);
 
         //Set up listener for restart button
-        //restartButton.onClick.AddListener(OnRestartButtonClick);
+        restartButton.onClick.AddListener(OnRestartButtonClick);
 
         //Ensure interactors are off when game starts
         ToggleInteractors(false);
@@ -48,72 +48,68 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Update the game timer if the game is not paused
-        if (!isPaused)
-        {
-            gameTime += Time.deltaTime;
-            UpdateTimerText();
-        }
+
     }
 
     private void OnEnable()
     {
-        //pauseButton.action.performed += DisplayPause;
+        pauseButton.action.performed += DisplayPause;
     }
 
     private void OnDisable()
     {
-        //pauseButton.action.performed -= DisplayPause;
+        pauseButton.action.performed -= DisplayPause;
     }
 
     private void DisplayPause(InputAction.CallbackContext context)
     {
         if (isPaused)
         {
-            ResumeGame(); // Resume the game if it's currently paused
+            // Resume the game if it's currently paused
+            ResumeGame();
         }
         else
         {
-            PauseGame(); // Pause the game if it's currently running
+            // Pause the game if it's currently running
+            PauseGame();
         }
     }
 
     private void PauseGame()
     {
         isPaused = true;
-        PositionPauseMenu(); // Position pause menu in front of the camera
-        pauseMenu.SetActive(true); // Show the pause menu
+
+        //Show pause menu
+        pauseMenu.SetActive(true);
+
+        //Stop the timer
+        gameManager.PauseTimer();
 
         // Enable ray interactors and disable direct interactors
         ToggleInteractors(true);
 
-        // Stop the game timer by setting timeScale to 0
-        timeScaleBeforePause = Time.timeScale; // Save the current timeScale
-        Time.timeScale = 0f;
+        // Position pause menu in front of the camera
+        PositionPauseMenu();
     }
 
     private void ResumeGame()
     {
         isPaused = false;
-        pauseMenu.SetActive(false); // Hide the pause menu
+
+        // Hide the pause menu
+        pauseMenu.SetActive(false);
+
+        //Resume the timer
+        gameManager.ResumeTimer();
 
         // Disable ray interactors and enable direct interactors
         ToggleInteractors(false);
-
-        // Restore the game timer 
-        Time.timeScale = timeScaleBeforePause;
-    }
-
-    private void UpdateTimerText()
-    {
-        // Update the timer text 
-        timerText.text = $"{gameTime:F2}";
     }
 
     private void PositionPauseMenu()
     {
         // Position menu a certain distance in front of the camera
-        float distanceFromCamera = 4.0f; 
+        float distanceFromCamera = 4.0f;
         Vector3 position = cameraTransform.position + cameraTransform.forward * distanceFromCamera;
 
         // Align menu to face the camera
@@ -142,9 +138,7 @@ public class PauseMenu : MonoBehaviour
 
     private void OnRestartButtonClick()
     {
-        Time.timeScale = 1f;
-        gameTime = 0f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameManager.RestartGame();
     }
 
 }

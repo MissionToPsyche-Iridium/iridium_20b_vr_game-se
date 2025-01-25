@@ -18,8 +18,10 @@ public class GameManager : MonoBehaviour
     public Text scoreVR;
     private GameObject eventSystem; //reference to EventSystem
 
-
+    private float initialGameTime; // Store the original game time
     private bool isGameOver = false;
+    private bool isTimerPaused = false;
+
     //setter and getter for isGameOver using C# Property
     public bool IsGameOver
     {
@@ -30,6 +32,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        // Save the initial game time
+        initialGameTime = gameTime;
+
         // Make sure game over screen is hidden when game starts
         if (gameOverPanel != null)
         {
@@ -45,7 +51,7 @@ public class GameManager : MonoBehaviour
         {
             UpdateGameTimer();
         }
-       
+
     }
 
     private void UpdateGameTimer()
@@ -83,6 +89,36 @@ public class GameManager : MonoBehaviour
                 gameOverPanel.SetActive(true);
             }
         }
+    }
+
+    public void PauseTimer()
+    {
+        isTimerPaused = true;
+    }
+
+    public void ResumeTimer()
+    {
+        isTimerPaused = false;
+    }
+
+    public void RestartGame()
+    {
+        //Reset the game time to the original value
+        gameTime = initialGameTime;
+
+        //Reset the game over state
+        isGameOver = false;
+
+        //Update timer test
+        var minutes = Mathf.FloorToInt(gameTime / 60);
+        var seconds = Mathf.FloorToInt(gameTime % 60);
+        timeTextBox.text = string.Format("{0:0} : {1:00}", minutes, seconds);
+
+        //Reset score
+
+        //Reload current scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
     }
 
 }
