@@ -597,7 +597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &164607630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,7 +1089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 836.6, y: -696.2}
+  m_AnchoredPosition: {x: 836.6, y: -733}
   m_SizeDelta: {x: 853.131, y: 40.159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304354498
@@ -4897,10 +4897,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1359840166}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 313, y: -302.02814}
-  m_SizeDelta: {x: 616, y: 510}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.48621932}
 --- !u!114 &1033177771
 MonoBehaviour:
@@ -4935,28 +4935,37 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nVirtual Reality is a VERY immersive experience and can affect everyone
-    differently.\nPlease read the following disclaimer before continuing.\n\r\nI
-    AM VOLUNTARILY PARTICIPATING IN THE AFOREMENTIONED ACTIVITY AND I AM \nPARTICIPATING
-    IN THE ACTIVITY ENTIRELY AT MY OWN RISK. I AM AWARE OF THE \nRISKS ASSOCIATED
-    WITH PARTICIPATING IN THIS ACTIVITY, WHICH MAY INCLUDE, \nBUT ARE NOT LIMITED
-    TO, PHYSICAL OR PSYCHOLOGICAL INJURY, PAIN, \nSUFFERING, TEMPORARY OR PERMANENT
-    DISABILITY, ECONOMIC OR EMOTIONAL \nLOSS, AND DEATH. I UNDERSTAND THAT THESE
-    INJURIES OR OUTCOMES MAY \nARISE FROM MY OWN OR OTHERS\u2019 NEGLIGENCE, OR THE
-    CONDITION OF THE \nACTIVITY LOCATION(S). NONETHELESS, I ASSUME ALL RELATED RISKS,
-    BOTH \nKNOWN AND UNKNOWN TO ME, OF MY PARTICIPATION IN THIS ACTIVITY.\r\n\r\nPre-existing
-    Medical Conditions\r\nPeople who have previous medical conditions such as severe
-    headaches, ear-aches, or \npsychiatric disorders, should see a doctor before
-    using our VR headsets. Some people \nmay experience seizures triggered by flashing
-    lights or patterns while experiencing \nvirtual reality, even if they have never
-    had a seizure before, or have no history of \nepilepsy or seizures. Anyone who
-    knows or believes they may have previously \nexperienced a seizure or other symptom
-    linked to an epileptic condition should see a \ndoctor prior to using our VR
-    headsets.\r\n\r\nMotion Sickness\r\nPeople who are prone to motion sickness have
-    a risk of experiencing discomfort when \nusing Virtual Reality. Do not use when
-    you are sleep deprived, are under the influence of \ndrugs or alcohol, or have
-    digestive problems.\r\n\r\nAge Restrictions\r\nChildren under the age of 14 must
-    be accompanied by an adult over the age of 18."
+  m_Text: "\nThis work was created in partial fulfillment of Arizona State University
+    Capstone Course\n\u201CSER401-SER402\u2033. The work is a result of the Psyche
+    Student Collaborations component\nof NASA\u2019s Psyche Mission (https://psyche.asu.edu).
+    \u201CPsyche: A Journey to a Metal World\u201D\n[Contract number NNM16AA09C]
+    is part of the NASA Discovery Program mission to solar\nsystem targets. Trade
+    names and trademarks of ASU and NASA are used in this work for\nidentification
+    only. Their usage does not constitute an official endorsement, either\nexpressed
+    or implied, by Arizona State University or National Aeronautics and Space\nAdministration.
+    The content is solely the responsibility of the authors and does not\nnecessarily
+    represent the official views of ASU or NASA.\n\nVirtual Reality is a VERY immersive
+    experience and can affect everyone differently.\nPlease read the following disclaimer
+    before continuing.\n\r\nI AM VOLUNTARILY PARTICIPATING IN THE AFOREMENTIONED
+    ACTIVITY AND I AM \nPARTICIPATING IN THE ACTIVITY ENTIRELY AT MY OWN RISK. I
+    AM AWARE OF THE \nRISKS ASSOCIATED WITH PARTICIPATING IN THIS ACTIVITY, WHICH
+    MAY INCLUDE, \nBUT ARE NOT LIMITED TO, PHYSICAL OR PSYCHOLOGICAL INJURY, PAIN,
+    \nSUFFERING, TEMPORARY OR PERMANENT DISABILITY, ECONOMIC OR EMOTIONAL \nLOSS,
+    AND DEATH. I UNDERSTAND THAT THESE INJURIES OR OUTCOMES MAY \nARISE FROM MY OWN
+    OR OTHERS\u2019 NEGLIGENCE, OR THE CONDITION OF THE \nACTIVITY LOCATION(S). NONETHELESS,
+    I ASSUME ALL RELATED RISKS, BOTH \nKNOWN AND UNKNOWN TO ME, OF MY PARTICIPATION
+    IN THIS ACTIVITY.\r\n\r\nPre-existing Medical Conditions\r\nPeople who have previous
+    medical conditions such as severe headaches, ear-aches, or \npsychiatric disorders,
+    should see a doctor before using our VR headsets. Some people \nmay experience
+    seizures triggered by flashing lights or patterns while experiencing \nvirtual
+    reality, even if they have never had a seizure before, or have no history of
+    \nepilepsy or seizures. Anyone who knows or believes they may have previously
+    \nexperienced a seizure or other symptom linked to an epileptic condition should
+    see a \ndoctor prior to using our VR headsets.\r\n\r\nMotion Sickness\r\nPeople
+    who are prone to motion sickness have a risk of experiencing discomfort when
+    \nusing Virtual Reality. Do not use when you are sleep deprived, are under the
+    influence of \ndrugs or alcohol, or have digestive problems.\r\n\r\nAge Restrictions\r\nChildren
+    under the age of 14 must be accompanied by an adult over the age of 18."
 --- !u!222 &1033177772
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5937,7 +5946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 580.3836, y: -696.2001}
+  m_AnchoredPosition: {x: 580.3836, y: -728}
   m_SizeDelta: {x: 853.131, y: 40.159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145069193
@@ -7034,7 +7043,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -15.1, y: 71.123}
-  m_SizeDelta: {x: 626, y: 590}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359840167
 MonoBehaviour:
@@ -8570,7 +8579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114, y: 334}
+  m_AnchoredPosition: {x: -114, y: 421}
   m_SizeDelta: {x: 420.651, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691419806
