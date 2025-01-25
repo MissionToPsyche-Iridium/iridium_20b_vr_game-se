@@ -56,6 +56,8 @@ public class GameManager : MonoBehaviour
 
     private void UpdateGameTimer()
     {
+        if (isTimerPaused) return;
+
         if (gameTime > 0)
         {
             gameTime -= Time.deltaTime;
