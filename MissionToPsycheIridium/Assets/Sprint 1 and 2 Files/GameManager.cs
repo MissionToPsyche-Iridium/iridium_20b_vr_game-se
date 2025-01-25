@@ -36,9 +36,6 @@ public class GameManager : MonoBehaviour
             gameOverPanel.SetActive(false);
         }
 
-        //show mouse cursor for debug (didn't work)
-        //Cursor.lockState = CursorLockMode.None;
-        //Cursor.visible = true;
     }
 
     // Update is called once per frame

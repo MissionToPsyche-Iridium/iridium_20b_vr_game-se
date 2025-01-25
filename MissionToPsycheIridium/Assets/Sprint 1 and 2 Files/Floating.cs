@@ -20,8 +20,11 @@ public class Floating : MonoBehaviour
         floatUp = true;
         GetComponent<Rigidbody>().angularVelocity = UnityEngine.Random.insideUnitSphere * tumble;
         StartCoroutine(FloatingRoutine());
-        GetComponent<AudioSource>().clip = collect;
-        GetComponent<AudioSource>().playOnAwake = false;
+
+        //threw MissingComponentException
+        // GetComponent<AudioSource>().clip = collect; 
+        // GetComponent<AudioSource>().playOnAwake = false;
+
         collisions = 0;
        
     }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {
@@ -11,13 +12,15 @@ public class GameOverScript : MonoBehaviour
     
     void Start()
     {
-        scoreNumber.text = ScoreItem.getScore().ToString();
+        //throws a NullReferenceException
+        //scoreNumber.text = ScoreItem.getScore().ToString();
     }
 
     public void restartGameButton()
     {
         //enter code to load main game scene here
         Debug.Log("restart button pressed");
+        SceneManager.LoadScene("MainGame");
     }
 
     public void exitButton()

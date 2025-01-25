@@ -23862,7 +23862,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29486,7 +29486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348fb95e6d47a4b15ae861f96d5cbace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 100
+  gameTime: 5
   timeTextBox: {fileID: 1313822063}
   gameOverPanel: {fileID: 1886822614}
   score: {fileID: 0}
@@ -51675,7 +51675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -75, y: 0}
+  m_AnchoredPosition: {x: -74.99994, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886822616
