@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     public InputActionReference pauseButton;
     public TMP_Text timerText;                
     public Button resumeButton;
+    public Button quitButton;
     public Transform cameraTransform;      // Reference to the camera
     public XRRayInteractor leftRay;        // Reference to left ray interactors
     public XRRayInteractor rightRay;       // Reference to right ray interactors
@@ -31,6 +33,8 @@ public class PauseMenu : MonoBehaviour
 
         //Set up listener for resume button
         resumeButton.onClick.AddListener(OnResumeButtonClick);
+
+        quitButton.onClick.AddListener(OnQuitButtonClick);
 
         //Ensure interactors are off when game starts
         ToggleInteractors(false);
@@ -124,6 +128,11 @@ public class PauseMenu : MonoBehaviour
     private void OnResumeButtonClick()
     {
         ResumeGame();
+    }
+
+    private void OnQuitButtonClick()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
