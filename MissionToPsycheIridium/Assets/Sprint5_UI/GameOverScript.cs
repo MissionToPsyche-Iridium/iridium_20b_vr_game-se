@@ -27,6 +27,7 @@ public class GameOverScript : MonoBehaviour
     {
         //enter code to load credits scene here
         Debug.Log("exit button pressed");
+        SceneManager.LoadScene("Credits");
     }
 
 

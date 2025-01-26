@@ -36,10 +36,10 @@ public class PauseMenu : MonoBehaviour
         resumeButton.onClick.AddListener(OnResumeButtonClick);
 
         //Set up listener for quit button
-        quitButton.onClick.AddListener(OnQuitButtonClick);
+        //quitButton.onClick.AddListener(OnQuitButtonClick);
 
         //Set up listener for restart button
-        restartButton.onClick.AddListener(OnRestartButtonClick);
+        //restartButton.onClick.AddListener(OnRestartButtonClick);
 
         //Ensure interactors are off when game starts
         ToggleInteractors(false);
@@ -53,12 +53,12 @@ public class PauseMenu : MonoBehaviour
 
     private void OnEnable()
     {
-        pauseButton.action.performed += DisplayPause;
+        //pauseButton.action.performed += DisplayPause;
     }
 
     private void OnDisable()
     {
-        pauseButton.action.performed -= DisplayPause;
+       // pauseButton.action.performed -= DisplayPause;
     }
 
     private void DisplayPause(InputAction.CallbackContext context)
