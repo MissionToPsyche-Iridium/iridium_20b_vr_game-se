@@ -12,8 +12,7 @@ public class GameOverScript : MonoBehaviour
     
     void Start()
     {
-        //throws a NullReferenceException
-        //scoreNumber.text = ScoreItem.getScore().ToString();
+        scoreNumber.text = ScoreItem.getScore().ToString();
     }
 
     public void restartGameButton()

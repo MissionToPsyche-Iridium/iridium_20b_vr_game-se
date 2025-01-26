@@ -10,5 +10,6 @@ public class CreditsScript : MonoBehaviour
     {
         //Code to go back to main menu here
         Debug.Log("main menu button pressed");
+        SceneManager.LoadScene("MainMenu");
     }
 }
