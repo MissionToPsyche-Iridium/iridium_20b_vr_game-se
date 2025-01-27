@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem.UI;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,17 +14,34 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float gameTime; // Total game time in seconds
     [SerializeField] private TextMeshProUGUI timeTextBox; // Text for timer
     [SerializeField] private GameObject gameOverPanel; // Reference to the game over UI
+    public Text score;
+    public Text scoreVR;
+    private GameObject eventSystem; //reference to EventSystem
 
+    private float initialGameTime; // Store the original game time
     private bool isGameOver = false;
+    private bool isTimerPaused = false;
+
+    //setter and getter for isGameOver using C# Property
+    public bool IsGameOver
+    {
+        get { return isGameOver; }
+        set { isGameOver = value; }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+
+        // Save the initial game time
+        initialGameTime = gameTime;
+
         // Make sure game over screen is hidden when game starts
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(false);
         }
+
     }
 
     // Update is called once per frame
@@ -30,11 +51,13 @@ public class GameManager : MonoBehaviour
         {
             UpdateGameTimer();
         }
-       
+
     }
 
     private void UpdateGameTimer()
     {
+        if (isTimerPaused) return;
+
         if (gameTime > 0)
         {
             gameTime -= Time.deltaTime;
@@ -46,6 +69,7 @@ public class GameManager : MonoBehaviour
 
             timeTextBox.text = gameTimeClock;
         }
+        //need code here to reset timer after restart.  Or a new method?
         else
         {
             //Timer stops at 0
@@ -57,6 +81,10 @@ public class GameManager : MonoBehaviour
             //Reset timer to 0
             timeTextBox.text = "0:00";
 
+            ScoreItem.setScore(Int32.Parse(scoreVR.text));
+
+            SceneManager.LoadScene("GameOver");
+
             // Display the Game Over panel
             if (gameOverPanel != null && !gameOverPanel.activeSelf)
             {
@@ -64,4 +92,35 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public void PauseTimer()
+    {
+        isTimerPaused = true;
+    }
+
+    public void ResumeTimer()
+    {
+        isTimerPaused = false;
+    }
+
+    public void RestartGame()
+    {
+        //Reset the game time to the original value
+        gameTime = initialGameTime;
+
+        //Reset the game over state
+        isGameOver = false;
+
+        //Update timer test
+        var minutes = Mathf.FloorToInt(gameTime / 60);
+        var seconds = Mathf.FloorToInt(gameTime % 60);
+        timeTextBox.text = string.Format("{0:0} : {1:00}", minutes, seconds);
+
+        //Reset score
+
+        //Reload current scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+
 }

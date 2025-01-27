@@ -783,7 +783,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Run",
+                    "name": "Jump2",
                     "type": "Button",
                     "id": "c4b7b946-4ea0-4a26-a1e0-e2b2c204d61b",
                     "expectedControlType": "Button",
@@ -961,11 +961,11 @@
                 {
                     "name": "",
                     "id": "5bcef03f-84c1-443b-8c6c-283fc0a28c26",
-                    "path": "<XRController>{LeftHand}/thumbstickClicked",
+                    "path": "<XRController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "Run",
+                    "action": "Jump2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
