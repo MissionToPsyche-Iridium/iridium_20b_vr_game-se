@@ -20,19 +20,13 @@ public class Floating : MonoBehaviour
         floatUp = true;
         GetComponent<Rigidbody>().angularVelocity = UnityEngine.Random.insideUnitSphere * tumble;
         StartCoroutine(FloatingRoutine());
-
-        //threw MissingComponentException
-        // GetComponent<AudioSource>().clip = collect; 
-        // GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().playOnAwake = false;
 
         collisions = 0;
        
     }
 
-    private void Update()
-    {
 
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -48,7 +42,7 @@ public class Floating : MonoBehaviour
                 collisions++;
                 Debug.Log("collision detected, sound played");
                 GetComponent<AudioSource>().Play();
-                StartCoroutine(testing2());
+                StartCoroutine(disableAndUpdate());
                 //Destroy(this.gameObject);
 
 
@@ -56,7 +50,7 @@ public class Floating : MonoBehaviour
         }
     }
 
-    public IEnumerator testing2()
+    public IEnumerator disableAndUpdate()
     {
         
         yield return new WaitForSeconds(1);
