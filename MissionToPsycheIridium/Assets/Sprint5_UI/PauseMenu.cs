@@ -53,6 +53,12 @@ public class PauseMenu : MonoBehaviour
 
     private void OnEnable()
     {
+        //debug
+        if(pauseButton == null)
+        {
+            print("pauseButton is null");
+        }
+
         pauseButton.action.performed += DisplayPause;
     }
 
