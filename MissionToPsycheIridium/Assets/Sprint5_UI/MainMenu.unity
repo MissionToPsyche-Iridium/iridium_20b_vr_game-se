@@ -554,7 +554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disclaimer: {fileID: 164607629}
   Tutorial: {fileID: 846496418}
-  buttonSound: {fileID: 0}
+  buttonSound: {fileID: 8300000, guid: f10e7ff812627164fa39911459400577, type: 3}
 --- !u!1 &145067569
 GameObject:
   m_ObjectHideFlags: 0
