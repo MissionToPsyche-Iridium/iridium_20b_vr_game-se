@@ -10,6 +10,7 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField] GameObject Tutorial;
     GameObject canvas;
     private bool isEventMode;
+    public AudioClip buttonSound;
 
     //this starts at the launch of scene
     void Start()
@@ -17,12 +18,20 @@ public class MainMenuScript : MonoBehaviour
         canvas = GameObject.Find("MainMenuCanvas");
         disclaimer.SetActive(false);
         Tutorial.SetActive(false);
+        GetComponent<AudioSource>().clip = buttonSound;
+        GetComponent<AudioSource>().playOnAwake = false;
+    }
+
+    void playButtonSound()
+    {
+        GetComponent<AudioSource>().Play();
     }
 
     //start game being pushed button
     //activates disclaimer "page"
     public void startGameButton()
     {
+        playButtonSound();
         disclaimer.SetActive(true);
         canvas.SetActive(false);
         isEventMode = false;
@@ -31,6 +40,7 @@ public class MainMenuScript : MonoBehaviour
     //disclaimer continue then opens the tutorial
     public void switchToTutorial()
     {
+        playButtonSound();
         disclaimer.SetActive(false);
         Tutorial.SetActive(true);
     }
@@ -38,7 +48,7 @@ public class MainMenuScript : MonoBehaviour
     //switches scene to game scene
     public void startGame()
     {
-
+        playButtonSound();
         //currently just loads event mode
         if (isEventMode)
         {
@@ -52,6 +62,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void eventModeButton()
     {
+        playButtonSound();
         //temporary
         disclaimer.SetActive(true);
         canvas.SetActive(false);
@@ -62,6 +73,7 @@ public class MainMenuScript : MonoBehaviour
     //this code is for going back when on the disclaimer page
     public void goBack()
     {
+        playButtonSound();
         disclaimer.SetActive(false);
         canvas.SetActive(true);
     }
@@ -69,18 +81,21 @@ public class MainMenuScript : MonoBehaviour
     //this code is for going back when on the tutorial page
     public void goBackDisclaimer()
     {
+        playButtonSound();
         Tutorial.SetActive(false);
         disclaimer.SetActive(true);
     }
 
     public void goToCredits()
     {
+        playButtonSound();
         SceneManager.LoadScene("Credits");
     }
 
     //this code quits the game. This has been confirmed to work in the test build. 
     public void exitButton()
     {
+        playButtonSound();
         Application.Quit();
     }
 }

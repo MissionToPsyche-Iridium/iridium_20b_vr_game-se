@@ -554,6 +554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disclaimer: {fileID: 164607629}
   Tutorial: {fileID: 846496418}
+  buttonSound: {fileID: 0}
 --- !u!1 &145067569
 GameObject:
   m_ObjectHideFlags: 0
@@ -8074,7 +8075,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c2f65140676fb124eb1e04e23637fe38, type: 2}
+  - {fileID: 2100000, guid: 2d056ac30ecc9e542b26e06133f23602, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
