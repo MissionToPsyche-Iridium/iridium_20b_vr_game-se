@@ -24,7 +24,7 @@ public class MainMenuScript : MonoBehaviour
 
     void playButtonSound()
     {
-        //GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().Play();
     }
 
     //start game being pushed button
