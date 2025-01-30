@@ -7683,6 +7683,7 @@ MonoBehaviour:
   rightDirect: {fileID: 297631454}
   leftmoveAction: {fileID: 0}
   rightmoveAction: {fileID: 0}
+  jumpAction: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1 &291917835
 GameObject:
@@ -29362,6 +29363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1051291206}
   - component: {fileID: 1051291205}
+  - component: {fileID: 1051291207}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -29401,6 +29403,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1051291207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051291204}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125fadf0e10e64bf896a4a6cd9235938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 757054287}
 --- !u!1 &1057669929
 GameObject:
   m_ObjectHideFlags: 0
@@ -31922,6 +31937,8 @@ MonoBehaviour:
   leftmoveAction: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   rightmoveAction: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  jumpAction: {fileID: 2252323536178931805, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   gameManager: {fileID: 1051291205}
 --- !u!4 &1103166242
@@ -37375,6 +37392,7 @@ GameObject:
   - component: {fileID: 1237757524}
   - component: {fileID: 1237757523}
   - component: {fileID: 1237757522}
+  - component: {fileID: 1237757526}
   m_Layer: 5
   m_Name: CanvasVR
   m_TagString: Untagged
@@ -37421,7 +37439,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1237757524
 Canvas:
   m_ObjectHideFlags: 0
@@ -37431,7 +37449,7 @@ Canvas:
   m_GameObject: {fileID: 1237757521}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 757054291}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -37452,9 +37470,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237757521}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.078459114, z: -0, w: 0.99691737}
+  m_LocalPosition: {x: 0, y: 0, z: -178.04}
+  m_LocalScale: {x: 0.0041848314, y: 0.0041848314, z: 0.0041848314}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 581327025}
@@ -37465,9 +37483,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 31.31998, y: -25.17}
+  m_SizeDelta: {x: 2606.0002, y: 1269}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1237757526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237757521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125fadf0e10e64bf896a4a6cd9235938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 757054287}
 --- !u!1 &1242931402
 GameObject:
   m_ObjectHideFlags: 0
@@ -39656,15 +39687,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313822061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 712}
-  m_LocalScale: {x: 2.5651562, y: 2.5651562, z: 2.5651562}
+  m_LocalPosition: {x: 0, y: 0, z: 610}
+  m_LocalScale: {x: 1.7558557, y: 1.7558557, z: 1.7558557}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1237757525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: 76}
+  m_AnchoredPosition: {x: 248, y: 448}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1313822063
@@ -39751,7 +39782,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 70.01082, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
