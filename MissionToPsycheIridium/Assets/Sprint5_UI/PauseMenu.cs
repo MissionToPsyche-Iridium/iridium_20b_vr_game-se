@@ -22,6 +22,7 @@ public class PauseMenu : MonoBehaviour
     public XRDirectInteractor rightDirect; // Reference to right direct interactor
     public InputActionReference leftmoveAction; //Reference to left hand move action
     public InputActionReference rightmoveAction; //Reference to right hand move action
+    public InputActionReference jumpAction; //Reference to the jump action
     public GameManager gameManager; //Reference to the game manager script
 
     private bool isPaused = false;         // Tracks when game is paused
@@ -88,6 +89,7 @@ public class PauseMenu : MonoBehaviour
         //Disable player movement
         if (leftmoveAction != null) leftmoveAction.action.Disable();
         if (rightmoveAction != null) rightmoveAction.action.Disable();
+        if (jumpAction != null) jumpAction.action.Disable();
 
 
         // Position pause menu in front of the camera
@@ -110,6 +112,7 @@ public class PauseMenu : MonoBehaviour
         //Enable player movement
         if (leftmoveAction != null) leftmoveAction.action.Enable();
         if (rightmoveAction != null) rightmoveAction.action.Enable();
+        if (jumpAction != null) jumpAction.action.Enable();
     }
 
     private void PositionPauseMenu()
