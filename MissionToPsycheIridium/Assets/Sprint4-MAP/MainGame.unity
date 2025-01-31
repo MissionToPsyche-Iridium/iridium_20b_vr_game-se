@@ -12215,6 +12215,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468503868}
+  - component: {fileID: 468503870}
+  - component: {fileID: 468503869}
   m_Layer: 0
   m_Name: Spacecraft
   m_TagString: Untagged
@@ -12244,6 +12246,52 @@ Transform:
   - {fileID: 1249988569}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.649, y: 16.351, z: -2.585}
+--- !u!54 &468503869
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468503867}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &468503870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468503867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a211e8ad75c7b42c9ab2bfd36794981e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.2
+  floatSpeed: 0.2
+  floatDistance: 0.2
+  floatDelay: 1
+  collect: {fileID: 0}
+  score: {fileID: 0}
+  pointValue: 0
 --- !u!1 &469676282
 GameObject:
   m_ObjectHideFlags: 0
@@ -23878,7 +23926,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34768,6 +34816,7 @@ GameObject:
   - component: {fileID: 1170305856}
   - component: {fileID: 1170305855}
   - component: {fileID: 1170305854}
+  - component: {fileID: 1170305858}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -34861,6 +34910,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170305858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170305853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dba7d1edd2f81a4091895f023770bd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0.2
 --- !u!1 &1174971717
 GameObject:
   m_ObjectHideFlags: 0
@@ -39006,6 +39068,7 @@ GameObject:
   - component: {fileID: 1294407402}
   - component: {fileID: 1294407401}
   - component: {fileID: 1294407400}
+  - component: {fileID: 1294407404}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -39099,6 +39162,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 32.409, z: 0}
+--- !u!114 &1294407404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294407399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dba7d1edd2f81a4091895f023770bd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 1
 --- !u!1 &1294744285
 GameObject:
   m_ObjectHideFlags: 0
@@ -39780,7 +39856,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 70.01082, w: 0}
+  m_margin: {x: 0, y: 0, z: 19.66531, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -49594,11 +49670,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8b15ea86f8386a24f93e7ff86e71b4cd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
