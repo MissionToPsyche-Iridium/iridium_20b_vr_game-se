@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     [Header("Timer Components")]
     [SerializeField] private float gameTime; // Total game time in seconds
     [SerializeField] private TextMeshProUGUI timeTextBox; // Text for timer
-    [SerializeField] private GameObject gameOverPanel; // Reference to the game over UI
+    
     public Text score;
     public Text scoreVR;
     private GameObject eventSystem; //reference to EventSystem
@@ -36,11 +36,7 @@ public class GameManager : MonoBehaviour
         // Save the initial game time
         initialGameTime = gameTime;
 
-        // Make sure game over screen is hidden when game starts
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(false);
-        }
+        
 
     }
 
@@ -85,11 +81,7 @@ public class GameManager : MonoBehaviour
 
             SceneManager.LoadScene("GameOver");
 
-            // Display the Game Over panel
-            if (gameOverPanel != null && !gameOverPanel.activeSelf)
-            {
-                gameOverPanel.SetActive(true);
-            }
+            
         }
     }
 
