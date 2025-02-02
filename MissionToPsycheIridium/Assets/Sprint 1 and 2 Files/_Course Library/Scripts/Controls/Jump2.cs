@@ -53,6 +53,7 @@ public class Jump2 : MonoBehaviour
         {
             return;
         }
+        GetComponent<AudioSource>().Play();
         playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
     }
 
