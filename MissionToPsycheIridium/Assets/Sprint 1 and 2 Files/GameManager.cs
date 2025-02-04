@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         {
             UpdateGameTimer();
         }
-
+        
     }
 
     private void UpdateGameTimer()

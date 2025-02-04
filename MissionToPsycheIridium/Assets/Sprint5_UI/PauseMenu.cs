@@ -24,6 +24,7 @@ public class PauseMenu : MonoBehaviour
     public InputActionReference rightmoveAction; //Reference to right hand move action
     public InputActionReference jumpAction; //Reference to the jump action
     public GameManager gameManager; //Reference to the game manager script
+    public AudioSource bgm; 
 
     private bool isPaused = false;         // Tracks when game is paused
 
@@ -76,7 +77,7 @@ public class PauseMenu : MonoBehaviour
     private void PauseGame()
     {
         isPaused = true;
-
+        bgm.Pause();
         //Show pause menu
         pauseMenu.SetActive(true);
 
@@ -99,7 +100,7 @@ public class PauseMenu : MonoBehaviour
     private void ResumeGame()
     {
         isPaused = false;
-
+        bgm.UnPause();
         // Hide the pause menu
         pauseMenu.SetActive(false);
 
