@@ -5784,10 +5784,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: f9f5080df9903524f942d53424e1ff24,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 163546924}
     - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: f9f5080df9903524f942d53424e1ff24,
         type: 3}
       insertIndex: -1
@@ -5796,12 +5792,6 @@ PrefabInstance:
 --- !u!1 &163546921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7146521406498821007, guid: f9f5080df9903524f942d53424e1ff24,
-    type: 3}
-  m_PrefabInstance: {fileID: 163546920}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &163546922 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: f9f5080df9903524f942d53424e1ff24,
     type: 3}
   m_PrefabInstance: {fileID: 163546920}
   m_PrefabAsset: {fileID: 0}
@@ -5827,28 +5817,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8678823145569952518, guid: f9f5080df9903524f942d53424e1ff24, type: 3}
---- !u!64 &163546924
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163546922}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5495902117074765545, guid: f9f5080df9903524f942d53424e1ff24, type: 3}
 --- !u!1 &165504101
 GameObject:
   m_ObjectHideFlags: 0
@@ -60793,7 +60761,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: abdbbfd33a46f4549987385f85c536b5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9f52b3d4ad8958647801a6a28a74f553, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
