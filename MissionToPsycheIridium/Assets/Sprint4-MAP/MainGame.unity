@@ -22890,6 +22890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 868555392}
+  - component: {fileID: 868555393}
   m_Layer: 0
   m_Name: Nickel
   m_TagString: Untagged
@@ -22917,6 +22918,25 @@ Transform:
   - {fileID: 1947541432}
   m_Father: {fileID: 764468688}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &868555393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868555391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1cb86ab9a4bc78408af7462e4163c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nickelLocations: []
+  nickelObjects:
+  - {fileID: 2905322456648016650}
+  - {fileID: 948580365}
+  - {fileID: 1490179987}
+  - {fileID: 940233269}
+  - {fileID: 1947541431}
 --- !u!1 &871855692
 GameObject:
   m_ObjectHideFlags: 0
