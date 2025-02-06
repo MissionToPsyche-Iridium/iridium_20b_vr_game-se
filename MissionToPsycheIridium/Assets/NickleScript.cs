@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,7 +22,7 @@ public class NickleScript : MonoBehaviour
 
     private void placeNicklePickups()
     {
-
+        
         //TODO: fill location array
         //TODO: randomize location array
         int count = 0;
@@ -29,6 +30,16 @@ public class NickleScript : MonoBehaviour
             nickelObj.transform.position = nickelLocations[count];
             count++;
         }
+    }
+
+    public String locationsToString()
+    {
+        String locStr = "";
+        foreach (Vector3 location in nickelLocations)
+        {
+            locStr = location.ToString();
+        }
+        return locStr;
     }
 
     private void randomizeList()
