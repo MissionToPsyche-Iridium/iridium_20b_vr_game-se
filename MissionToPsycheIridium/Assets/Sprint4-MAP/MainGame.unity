@@ -51538,7 +51538,7 @@ MonoBehaviour:
     type: 3}
   rightmoveAction: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
-  jumpAction: {fileID: 2252323536178931805, guid: c348712bda248c246b8c49b3db54643f,
+  jumpAction: {fileID: 3752219735478092160, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   gameManager: {fileID: 1051291205}
   bgm: {fileID: 1808361233}
@@ -98017,7 +98017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf16706206d6ec4ba3679e771e355c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpButton: {fileID: 2252323536178931805, guid: c348712bda248c246b8c49b3db54643f,
+  jumpButton: {fileID: 3752219735478092160, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   charController: {fileID: 2123205088}
   jumpHeight: 2.96

@@ -781,24 +781,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Jump2",
-                    "type": "Button",
-                    "id": "c4b7b946-4ea0-4a26-a1e0-e2b2c204d61b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "JumpTrigger",
-                    "type": "Button",
-                    "id": "fdd19aae-d59c-49d1-ac04-0fe3cac21755",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -964,28 +946,6 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "Generic XR Controller",
                     "action": "Scale Delta",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5bcef03f-84c1-443b-8c6c-283fc0a28c26",
-                    "path": "<XRController>{LeftHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Jump2",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "55667482-1e30-4df2-9ab0-247f6ea70e82",
-                    "path": "<XRController>{LeftHand}/triggerButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "JumpTrigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1619,9 +1579,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
+                    "name": "Jump2",
                     "type": "Button",
                     "id": "bdba9c24-e769-4826-9019-6d710219cbf3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "JumpTrigger",
+                    "type": "Button",
+                    "id": "771f1c04-f0bb-431d-8358-0ec7031188ec",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -1801,7 +1770,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "Jump",
+                    "action": "Jump2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "88f1fe59-550c-4333-b4a0-b1849d751e8d",
+                    "path": "<XRController>{RightHand}/triggerButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "JumpTrigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
