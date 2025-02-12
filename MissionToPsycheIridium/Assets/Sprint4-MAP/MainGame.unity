@@ -37985,6 +37985,7 @@ GameObject:
   - component: {fileID: 912417486}
   - component: {fileID: 912417485}
   - component: {fileID: 912417484}
+  - component: {fileID: 912417489}
   m_Layer: 0
   m_Name: Locomotion System
   m_TagString: Untagged
@@ -38019,7 +38020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 0}
+  m_System: {fileID: 912417488}
   m_TurnSpeed: 60
   m_LeftHandTurnAction:
     m_UseReference: 0
@@ -38164,6 +38165,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XROrigin: {fileID: 0}
+--- !u!114 &912417489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912417482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67dabb0c40c35c14599e2cb80428723e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveObject: {fileID: 912417485}
+  runButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Run Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e2f05cc3-bde7-49d9-b4f3-9cf90a3a6207
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8069514856583376848, guid: 0be0028c24f2a4c14a96b6aa39055933,
+      type: 3}
 --- !u!1 &916944466
 GameObject:
   m_ObjectHideFlags: 0
