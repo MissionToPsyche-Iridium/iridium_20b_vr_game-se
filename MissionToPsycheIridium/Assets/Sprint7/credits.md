@@ -10,6 +10,7 @@ by Evgenii Nikolskii
 
 - Textures:
 
-- Sound:
+- Sound: (Pause Menu) - alkakrab (GameOver) - mikeheartu (MainGame) - Phat Phrog Studio (SFX) - leohpaz, hoveaudio
+
 
 - Facts: 
