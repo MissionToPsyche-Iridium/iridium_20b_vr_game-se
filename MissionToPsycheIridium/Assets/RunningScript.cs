@@ -9,8 +9,10 @@ public class RunningScript : MonoBehaviour
 {
     [SerializeField] private ActionBasedContinuousMoveProvider moveObject;
     [SerializeField] private InputActionReference runButton;
+    [SerializeField] private float SpeedMult = 1.3f;
     public CharacterController charController;
     private bool isRunning = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,31 +24,22 @@ public class RunningScript : MonoBehaviour
     void Update()
     {
 
+        //I'm assuming here that runVal > 0 indicates a run button is on
         float runVal = runButton.action.ReadValue<float>();
 
-        if(runVal > 0 && !isRunning) //if button is pressed?  while not running
+        if (runVal > 0 && !isRunning) //if button is pressed?  while not running
         {
             isRunning = true;
-            moveObject.moveSpeed *= 1.3f;
+            moveObject.moveSpeed *= SpeedMult;
         }
 
-        //if running, keep running
-        if (isRunning)
+        //if running and button is released
+        else if (!(runVal > 0) && isRunning)
         {
-            //print out value of InputAction (assuming if > 0, button is pressed)
-            print("running:" + runButton.action.ReadValue<float>()); //debug
-
-
-            
+            isRunning = false;
+            moveObject.moveSpeed /= SpeedMult;
         }
 
-        //if not running, check if running
-        else if (!isRunning) 
-        {
-            isRunning = true;
-            moveObject.moveSpeed *= 1.3f; 
-        }
-        
     }
 
     private void Run()
