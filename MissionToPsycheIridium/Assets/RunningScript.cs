@@ -31,6 +31,7 @@ public class RunningScript : MonoBehaviour
         {
             isRunning = true;
             moveObject.moveSpeed *= SpeedMult;
+            print("run button pressed");
         }
 
         //if running and button is released
@@ -38,6 +39,7 @@ public class RunningScript : MonoBehaviour
         {
             isRunning = false;
             moveObject.moveSpeed /= SpeedMult;
+            print("run button released");
         }
 
     }
