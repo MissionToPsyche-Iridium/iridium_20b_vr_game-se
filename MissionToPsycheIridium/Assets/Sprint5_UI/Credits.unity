@@ -895,7 +895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.2, y: 23.3}
+  m_AnchoredPosition: {x: -0.2, y: 20.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253617760
@@ -5147,9 +5147,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Textures (Planets) - Evgenii Nikolskii\nTextures (Terrain) - \nAsteroid
-    Models - Mark Dion & Entian-Astea\nSkybox - \nMusic - alkabrab, mikeheartu\nSound
-    Effects - \nFacts -"
+  m_text: "Textures (Planets) - Evgenii Nikolskii\nTextures (Terrain) - Terramorph
+    Workshop\nAsteroid Models - Mark Dion & Entian-Astea\nSkybox - \nMusic - alkabrab,
+    mikeheartu\nSound Effects - \nFacts -"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 500c8b014e8c041b8982d40b1db00225, type: 2}
   m_sharedMaterial: {fileID: -6674944201535329505, guid: 500c8b014e8c041b8982d40b1db00225,
