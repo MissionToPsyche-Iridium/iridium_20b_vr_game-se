@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -10,6 +11,7 @@ public class Running : MonoBehaviour
     public ContinuousMoveProviderBase continuousMoveProviderBase;
     public InputActionReference runButton = null;
     private bool isRunning = false;
+    private bool runningButtonPressed = false;
     public float walkingSpeed = 5.28f;
     public float runningSpeed = 10.0f;
     private float timer = 0.0f;
@@ -19,38 +21,87 @@ public class Running : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isRunning = true; 
+        isRunning = false; 
     }
 
     // Update is called once per frame
     void Update()
     {
         float runVal = runButton.action.ReadValue<float>();
-        if (runVal > 0 && isRunning == true)
+        
+        if (runVal > 0 && isRunning == false)
         {
-            timer += Time.deltaTime;
+            runVal = 1;
             Debug.Log("button pressed");
             //isRunning = false;
-            runButtonAction();
-            if (timer > runningTime)
+            //timer += Time.deltaTime;
+            
+           
+            StartCoroutine(runButtonAction());
+            runningButtonPressed = true;
+             
+            /*if (timer >= runningTime && timer < timeOut)
             {
+                Debug.Log("timer 2nd if : " + timer);
+                isRunning = false;
+                continuousMoveProviderBase.moveSpeed = walkingSpeed;
+            } 
+            if (timer >= timeOut)
+            {
+                runningButtonPressed = false;
+                runVal = 0;
+                Debug.Log("timer 3nd if : " + timer);
+            }*/
+            
 
-            }
+
         }
-        if (runVal == 0)
+        if (runningButtonPressed == false && isRunning == false)
         {
-            isRunning = true;
+            continuousMoveProviderBase.moveSpeed = walkingSpeed;
+            //isRunning = true;
         }
         
     }
 
-    void runButtonAction()
+    IEnumerator runButtonAction()
     {
-        if (isRunning == false)
+
+        isRunning = true;
+
+        float runTimer = 0f;
+
+        while (runTimer < timeOut)
         {
-            return;
+            continuousMoveProviderBase.moveSpeed = runningSpeed;
+            runTimer += Time.deltaTime;
+            if (runTimer >= runningTime)
+            {
+                continuousMoveProviderBase.moveSpeed = walkingSpeed;
+            }
+            yield return null;
         }
-        continuousMoveProviderBase.moveSpeed = runningSpeed;
-        Debug.Log(continuousMoveProviderBase.moveSpeed);
+
+        isRunning = false;
+        runningButtonPressed = false;
+
+
+            /*if (runningButtonPressed == true)
+            {
+                return;
+            }
+            continuousMoveProviderBase.moveSpeed = runningSpeed;
+            Debug.Log(continuousMoveProviderBase.moveSpeed);*/
+        }
+
+    void runButtonDisabled()
+    {
+        
+    }
+
+    void runButtonTimeOut()
+    {
+        continuousMoveProviderBase.moveSpeed = walkingSpeed;
+        isRunning = true;
     }
 }
