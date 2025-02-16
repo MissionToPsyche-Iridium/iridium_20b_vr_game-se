@@ -16,6 +16,7 @@ public class Running : MonoBehaviour
     public float runningSpeed = 10.0f;
     private float timer = 0.0f;
     private float timeOut = 10.0f;
+    public AudioSource runningSound;
     [SerializeField]
     float runningTime = 5.0f;
     // Start is called before the first frame update
@@ -33,33 +34,18 @@ public class Running : MonoBehaviour
         {
             runVal = 1;
             Debug.Log("button pressed");
-            //isRunning = false;
-            //timer += Time.deltaTime;
+    
             
            
             StartCoroutine(runButtonAction());
             runningButtonPressed = true;
-             
-            /*if (timer >= runningTime && timer < timeOut)
-            {
-                Debug.Log("timer 2nd if : " + timer);
-                isRunning = false;
-                continuousMoveProviderBase.moveSpeed = walkingSpeed;
-            } 
-            if (timer >= timeOut)
-            {
-                runningButtonPressed = false;
-                runVal = 0;
-                Debug.Log("timer 3nd if : " + timer);
-            }*/
             
-
 
         }
         if (runningButtonPressed == false && isRunning == false)
         {
             continuousMoveProviderBase.moveSpeed = walkingSpeed;
-            //isRunning = true;
+    
         }
         
     }
@@ -71,9 +57,11 @@ public class Running : MonoBehaviour
 
         float runTimer = 0f;
 
+        runningSound.Play();
         while (runTimer < timeOut)
         {
             continuousMoveProviderBase.moveSpeed = runningSpeed;
+            
             runTimer += Time.deltaTime;
             if (runTimer >= runningTime)
             {
@@ -85,13 +73,6 @@ public class Running : MonoBehaviour
         isRunning = false;
         runningButtonPressed = false;
 
-
-            /*if (runningButtonPressed == true)
-            {
-                return;
-            }
-            continuousMoveProviderBase.moveSpeed = runningSpeed;
-            Debug.Log(continuousMoveProviderBase.moveSpeed);*/
         }
 
     void runButtonDisabled()
