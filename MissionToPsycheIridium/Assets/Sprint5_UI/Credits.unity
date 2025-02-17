@@ -5149,7 +5149,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Textures (Planets) - Evgenii Nikolskii\nTextures (Terrain) - Terramorph
     Workshop\nAsteroid Models - Mark Dion & Entian-Astea\nSkybox - Sean Duffy\nMusic
-    - alkabrab, mikeheartu\nSound Effects - \nFacts -"
+    - alkabrab game sound, Michael Macasiano\nSound Effects - \nFacts -"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 500c8b014e8c041b8982d40b1db00225, type: 2}
   m_sharedMaterial: {fileID: -6674944201535329505, guid: 500c8b014e8c041b8982d40b1db00225,
