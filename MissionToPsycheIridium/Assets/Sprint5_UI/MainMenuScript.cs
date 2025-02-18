@@ -41,6 +41,7 @@ public class MainMenuScript : MonoBehaviour
     public void switchToTutorial()
     {
         playButtonSound();
+        Debug.Log("continue clicked to tutorial");
         disclaimer.SetActive(false);
         Tutorial.SetActive(true);
     }
@@ -49,6 +50,7 @@ public class MainMenuScript : MonoBehaviour
     public void startGame()
     {
         playButtonSound();
+        Debug.Log("continue clicked to game");
         //currently just loads event mode
         if (isEventMode)
         {
@@ -62,6 +64,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void eventModeButton()
     {
+        Debug.Log("event mode clicked");
         playButtonSound();
         //temporary
         disclaimer.SetActive(true);
@@ -73,6 +76,7 @@ public class MainMenuScript : MonoBehaviour
     //this code is for going back when on the disclaimer page
     public void goBack()
     {
+        Debug.Log("back button clicked to go back to menu");
         playButtonSound();
         disclaimer.SetActive(false);
         canvas.SetActive(true);
@@ -81,6 +85,7 @@ public class MainMenuScript : MonoBehaviour
     //this code is for going back when on the tutorial page
     public void goBackDisclaimer()
     {
+        Debug.Log("back button clicked to go back to disclaimer");
         playButtonSound();
         Tutorial.SetActive(false);
         disclaimer.SetActive(true);
@@ -88,6 +93,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void goToCredits()
     {
+        
         playButtonSound();
         SceneManager.LoadScene("Credits");
     }
