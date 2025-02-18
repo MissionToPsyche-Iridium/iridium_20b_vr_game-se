@@ -5124,7 +5124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.24, y: -8.84}
+  m_AnchoredPosition: {x: 1.24, y: -3.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476125832
@@ -5149,7 +5149,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Textures (Planets) - Evgenii Nikolskii\nTextures (Terrain) - Terramorph
     Workshop\nAsteroid Models - Mark Dion & Entian-Astea\nSkybox - Sean Duffy\nMusic
-    - alkabrab game sound, Michael Macasiano\nSound Effects - \nFacts -"
+    - alkabrab game sound, Michael Macasiano\nSound Effects - \nInformation sourced
+    from the Psyche Mission Press Kit and FAQ, \nArizona State University (2023).
+    Retrieved from psyche.asu.edu."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 500c8b014e8c041b8982d40b1db00225, type: 2}
   m_sharedMaterial: {fileID: -6674944201535329505, guid: 500c8b014e8c041b8982d40b1db00225,
@@ -6722,7 +6724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.2, y: 1.5517}
+  m_AnchoredPosition: {x: -0.2, y: -2.3}
   m_SizeDelta: {x: 200, y: 61.4966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869015357
