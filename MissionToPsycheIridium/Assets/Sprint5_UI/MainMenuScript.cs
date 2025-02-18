@@ -8,14 +8,14 @@ public class MainMenuScript : MonoBehaviour
 {
     [SerializeField] GameObject disclaimer;
     [SerializeField] GameObject Tutorial;
-    GameObject canvas;
+    [SerializeField] GameObject canvas;
     private bool isEventMode;
     public AudioClip buttonSound;
 
     //this starts at the launch of scene
     void Start()
     {
-        canvas = GameObject.Find("MainMenuCanvas");
+        //canvas = GameObject.Find("MainMenuCanvas");
         disclaimer.SetActive(false);
         Tutorial.SetActive(false);
         GetComponent<AudioSource>().clip = buttonSound;
