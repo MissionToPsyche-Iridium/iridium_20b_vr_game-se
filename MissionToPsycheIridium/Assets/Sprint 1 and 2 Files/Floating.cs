@@ -50,6 +50,7 @@ public class Floating : MonoBehaviour
                 } else
                 {
                     worldSpace.SetActive(true);
+                    StartCoroutine(disableAndUpdate());
                 }
                 //Destroy(this.gameObject);
 
