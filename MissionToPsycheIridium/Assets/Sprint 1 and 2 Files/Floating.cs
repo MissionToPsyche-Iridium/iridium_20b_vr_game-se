@@ -11,7 +11,7 @@ public class Floating : MonoBehaviour
     [SerializeField] private float floatDistance = 0.5f;
     [SerializeField] private float floatDelay = 1f;
     [SerializeField] GameObject worldSpace;
-    public Boolean isResearch;
+  
     public AudioClip collect;
     public Text score;
     private int collisions;
@@ -44,15 +44,10 @@ public class Floating : MonoBehaviour
                 collisions++;
                 Debug.Log("collision detected, sound played");
                 GetComponent<AudioSource>().Play();
-                if (!isResearch)
-                {
-                    StartCoroutine(disableAndUpdate());
-                } else
-                {
-                    worldSpace.SetActive(true);
-                    StartCoroutine(disableAndUpdate());
-                }
-                //Destroy(this.gameObject);
+                
+                
+                StartCoroutine(disableAndUpdate());
+                
 
 
             }
