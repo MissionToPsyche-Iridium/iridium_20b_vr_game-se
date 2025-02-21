@@ -72,7 +72,6 @@ public class MainMenuScript : MonoBehaviour
         isEventMode = true;
     }
 
-
     //this code is for going back when on the disclaimer page
     public void goBack()
     {
@@ -93,7 +92,6 @@ public class MainMenuScript : MonoBehaviour
 
     public void goToCredits()
     {
-        
         playButtonSound();
         SceneManager.LoadScene("Credits");
     }

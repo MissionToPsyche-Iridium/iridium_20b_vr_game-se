@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     [SerializeField] TextMeshProUGUI scoreNumber;
     [SerializeField] GameObject credits;
     [SerializeField] GameObject gameOver;
@@ -26,7 +26,7 @@ public class GameOverScript : MonoBehaviour
 
     public void restartGameButton()
     {
-        //enter code to load main game scene here
+
         Debug.Log("restart button pressed");
         playButtonSound();
         SceneManager.LoadScene("MainGame");
@@ -34,7 +34,7 @@ public class GameOverScript : MonoBehaviour
 
     public void exitButton()
     {
-        //enter code to load credits scene here
+
         Debug.Log("exit button pressed");
         playButtonSound();
         credits.SetActive(true);

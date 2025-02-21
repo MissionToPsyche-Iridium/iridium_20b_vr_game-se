@@ -1,13 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class Running : MonoBehaviour
 {
-
     public ContinuousMoveProviderBase continuousMoveProviderBase;
     public InputActionReference runButton = null;
     private bool isRunning = false;
@@ -17,8 +14,7 @@ public class Running : MonoBehaviour
     private float timer = 0.0f;
     private float timeOut = 10.0f;
     public AudioSource runningSound;
-    [SerializeField]
-    float runningTime = 5.0f;
+    [SerializeField] float runningTime = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,9 +30,7 @@ public class Running : MonoBehaviour
         {
             runVal = 1;
             Debug.Log("button pressed");
-    
-            
-           
+   
             StartCoroutine(runButtonAction());
             runningButtonPressed = true;
             
@@ -45,14 +39,12 @@ public class Running : MonoBehaviour
         if (runningButtonPressed == false && isRunning == false)
         {
             continuousMoveProviderBase.moveSpeed = walkingSpeed;
-    
         }
         
     }
 
     IEnumerator runButtonAction()
     {
-
         isRunning = true;
 
         float runTimer = 0f;
@@ -75,14 +67,4 @@ public class Running : MonoBehaviour
 
         }
 
-    void runButtonDisabled()
-    {
-        
-    }
-
-    void runButtonTimeOut()
-    {
-        continuousMoveProviderBase.moveSpeed = walkingSpeed;
-        isRunning = true;
-    }
 }

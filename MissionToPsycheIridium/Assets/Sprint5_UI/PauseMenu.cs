@@ -27,12 +27,9 @@ public class PauseMenu : MonoBehaviour
     public AudioSource bgm;
     public AudioSource pauseBgm;
     public bool initialPause;
-
     private bool isPaused = false;         // Tracks when game is paused
 
 
-
-    // Start is called before the first frame update
     void Start()
     {
         //Hide pause menu when game starts
@@ -52,11 +49,6 @@ public class PauseMenu : MonoBehaviour
         ToggleInteractors(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     private void OnEnable()
     {
