@@ -276,6 +276,7 @@ MonoBehaviour:
   floatSpeed: 0.5
   floatDistance: 0.5
   floatDelay: 1
+  worldSpace: {fileID: 0}
   collect: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
   score: {fileID: 0}
   pointValue: 5
@@ -908,6 +909,7 @@ MonoBehaviour:
   floatSpeed: 0.5
   floatDistance: 0.5
   floatDelay: 1
+  worldSpace: {fileID: 0}
   collect: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
   score: {fileID: 0}
   pointValue: 1
@@ -3215,8 +3217,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 17, y: -0.8}
-  m_SizeDelta: {x: -623.52, y: 26.378}
+  m_AnchoredPosition: {x: 16.735443, y: -1.2945029}
+  m_SizeDelta: {x: -613.838, y: 25.388996}
   m_Pivot: {x: 0.97267437, y: 0.49999982}
 --- !u!114 &467152412
 MonoBehaviour:
@@ -3524,8 +3526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 499.6, y: -663.5861}
-  m_SizeDelta: {x: 853.131, y: 18.416}
+  m_AnchoredPosition: {x: 528.2, y: -680.1}
+  m_SizeDelta: {x: 853.131, y: 18.621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &513241438
 MonoBehaviour:
@@ -3677,7 +3679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 887.4, y: -663.8921}
+  m_AnchoredPosition: {x: 862.1, y: -680.1}
   m_SizeDelta: {x: 853.131, y: 18.621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &520202853
@@ -5317,7 +5319,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 684bbe84cbc5d1046a009a378ee563dd, type: 2}
+  - {fileID: -905690159841262435, guid: 26211ed3dc13e314882d12820ddb2573, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6603,8 +6605,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 441, y: -318.9829}
-  m_SizeDelta: {x: 872, y: 543}
+  m_AnchoredPosition: {x: 441, y: -336.45145}
+  m_SizeDelta: {x: 872, y: 577}
   m_Pivot: {x: 0.5, y: 0.48621932}
 --- !u!114 &1033177771
 MonoBehaviour:
@@ -6639,7 +6641,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nThis work was created in partial fulfillment of Arizona State \nUniversity
+  m_Text: "\n\nThis work was created in partial fulfillment of Arizona State \nUniversity
     Capstone Course \u201CSER401\u2033 and \"SER402\". The \nwork is a result of
     the Psyche Student Collaborations component \nof NASA\u2019s Psyche Mission (https://psyche.asu.edu).
     \u201CPsyche: A \nJourney to a Metal World\u201D [Contract number NNM16AA09C]
@@ -7527,7 +7529,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7556,7 +7558,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -0.09162903, w: 0}
+  m_margin: {x: -13.462357, y: 0, z: -6.829323, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7712,8 +7714,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 547, y: -685}
-  m_SizeDelta: {x: 843.362, y: 23.375}
+  m_AnchoredPosition: {x: 495.4, y: -685}
+  m_SizeDelta: {x: 841.66, y: 21.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145069193
 MonoBehaviour:
@@ -8782,7 +8784,6 @@ GameObject:
   - component: {fileID: 1261899743}
   - component: {fileID: 1261899742}
   - component: {fileID: 1261899741}
-  - component: {fileID: 1261899740}
   - component: {fileID: 1261899744}
   m_Layer: 0
   m_Name: Silver
@@ -8807,25 +8808,6 @@ Transform:
   - {fileID: 789513474}
   m_Father: {fileID: 846496419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1261899740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261899738}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a211e8ad75c7b42c9ab2bfd36794981e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tumble: 1
-  floatSpeed: 0.5
-  floatDistance: 0.5
-  floatDelay: 1
-  collect: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
-  score: {fileID: 0}
-  pointValue: 3
 --- !u!114 &1261899741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9778,8 +9760,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.1, y: 71.123}
-  m_SizeDelta: {x: 882, y: 623}
+  m_AnchoredPosition: {x: -15.1, y: 94.18}
+  m_SizeDelta: {x: 882, y: 657}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359840167
 MonoBehaviour:
@@ -11516,7 +11498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: 359}
+  m_AnchoredPosition: {x: -198, y: 352}
   m_SizeDelta: {x: 420.651, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691419806
@@ -13398,6 +13380,7 @@ MonoBehaviour:
   floatSpeed: 0.3
   floatDistance: 0.2
   floatDelay: 2
+  worldSpace: {fileID: 0}
   collect: {fileID: 0}
   score: {fileID: 0}
   pointValue: 0
@@ -13602,6 +13585,7 @@ MonoBehaviour:
   floatSpeed: 0.5
   floatDistance: 0.5
   floatDelay: 1
+  worldSpace: {fileID: 0}
   collect: {fileID: 0}
   score: {fileID: 0}
   pointValue: 0
