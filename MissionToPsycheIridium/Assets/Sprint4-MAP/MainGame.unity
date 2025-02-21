@@ -522,10 +522,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: 'Psyche is likely a mixture of rock and metal with metal making up between
+    30% and 60% of its volume. '
 --- !u!222 &10407726
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10556,10 +10554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: 'Psyche is estimated to have a surface area of 64,000 square miles. '
 --- !u!222 &233085406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11089,10 +11084,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: "The Psyche spacecraft\u2019s distance to travel to Psyche is about 2.2
+    billion miles which will take about 6 years. "
 --- !u!222 &244175140
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16248,10 +16241,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: The surface gravity on Psyche is much less than on Earth, and even less
+    than on the Moon. On Psychem lifting a car would feel as light as lifting a big
+    dog on Earth.
 --- !u!222 &393507581
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22191,10 +22183,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: "A day on Psyche is about 4 hours and 12 minutes. This is the amount of
+    time it takes for it to make one full rotation. Therefore one day on Earth would
+    be equivalent to just under six \u201Cdays\u201D on Psyche."
 --- !u!222 &500291333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24502,10 +24493,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: A year on Psyche lasts about five Earth years.
 --- !u!222 &563468483
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34483,10 +34471,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: "The Psyche mission will be using three main scientific instruments to
+    help determine Psyche\u2019s origin story. One being the Magnetometer which searches
+    for evidence of an ancient magnetic field. This can possibly prove the asteroid
+    was formed from the core of a planetary body. "
 --- !u!222 &800259790
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38756,7 +38744,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44921,10 +44909,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: "The Psyche mission will be using three main scientific instruments to
+    help determine Psyche\u2019s origin story. One being the Multispectral imager
+    which can provide information about the mineral composition and topography of
+    Psyche. \n"
 --- !u!222 &1001510203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -51233,10 +51221,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: 'The asteroid Psyche is named after the goddess of the soul in ancient
+    Greek mythology. This was usually depicted as a butterfly-winged female figure. '
 --- !u!222 &1093457539
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54240,10 +54226,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: 'The Psyche spacecraft will use a special kind of propulsion system for
+    the first time beyond the Moon. '
 --- !u!222 &1133450031
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -64954,10 +64938,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: "The Psyche mission will be using three main scientific instruments to
+    help determine Psyche\u2019s origin story. One being the Gamma-ray and neutron
+    spectrometer which can determine the chemical elements that make up the asteroid. "
 --- !u!222 &1334977275
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -67039,10 +67022,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: "The scientists on the Psyche team plan to conduct gravity science, a telecommunication
+    system which analyzes the radio waves the spacecraft communicates with. Through
+    this investigation, scientists can measure how the asteroid Psyche affects the
+    spacecraft\u2019s orbit and then can determine the rotation, mass and gravity
+    field of the asteroid.\n"
 --- !u!222 &1380246158
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -75889,10 +75873,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: Studying Psyche closely could give us evidence of the origins of our solar
+    system. NASA believes that the asteroid could be a building block of an early
+    rocky planet. The rocky planets include Mercury, Venus, Mars, and Earth.
 --- !u!222 &1607523178
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -80416,10 +80399,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: 'This will be the first time exploring a world made of metal and not of
+    rock and ice. '
 --- !u!222 &1738201021
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -85424,10 +85405,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: "Psyche is the 14th mission selected for NASA\u2019s Discovery Program. "
 --- !u!222 &1871247155
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -87260,10 +87238,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: A science goal for the Psyche mission is to understand a previously unexplored
+    building block of planet formation, iron cores.
 --- !u!222 &1914525052
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -91376,9 +91352,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Up until the Psyche mission, scientists have only been able to study the
+  m_Text: 'Up until the Psyche mission, scientists have only been able to study the
     asteroid from afar. The Psyche mission will be the first to study the asteroid
-    up close. \n"
+    up close. '
 --- !u!222 &1975695139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -96619,10 +96595,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The asteroid Psyche was discovered in 1852 by Italian astronomer Annibale
-    de Gasparis.
-
-    It was the 16th asteroid to be discovered.'
+  m_Text: 'Psyche orbits the Sun in the outer part of the main asteroid belt between
+    Mars and Jupiter. It is approx three times farther from the Sun than the Earth
+    is. '
 --- !u!222 &2086096206
 CanvasRenderer:
   m_ObjectHideFlags: 0
