@@ -92461,7 +92461,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -97177,8 +97177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9468597343aa3e14f9d5d5328df0b5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIscore: {fileID: 783418152}
-  collect: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
 --- !u!82 &2093235256
 AudioSource:
   m_ObjectHideFlags: 0
