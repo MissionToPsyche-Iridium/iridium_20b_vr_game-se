@@ -59,7 +59,7 @@ public class Floating : MonoBehaviour
 
         updateScore = updateScore + pointValue;
 
-
+        ScoreItem.increaseItemQty(pointValue);
         score.text = updateScore.ToString();
     }
 

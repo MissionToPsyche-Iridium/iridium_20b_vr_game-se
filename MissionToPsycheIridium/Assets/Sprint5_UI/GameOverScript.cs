@@ -9,6 +9,11 @@ public class GameOverScript : MonoBehaviour
 {
 
     [SerializeField] TextMeshProUGUI scoreNumber;
+    [SerializeField] TextMeshProUGUI goldText;
+    [SerializeField] TextMeshProUGUI nickelText;
+    [SerializeField] TextMeshProUGUI silverText;
+    [SerializeField] TextMeshProUGUI ironText;
+    [SerializeField] TextMeshProUGUI researchText;
     [SerializeField] GameObject credits;
     [SerializeField] GameObject gameOver;
     

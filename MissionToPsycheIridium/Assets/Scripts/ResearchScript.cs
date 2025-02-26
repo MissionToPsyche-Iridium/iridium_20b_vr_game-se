@@ -33,7 +33,7 @@ public class ResearchScript : MonoBehaviour
                 collisions++;
                 Debug.Log("collision detected, sound played");
                 sound.Play();
-                
+                ScoreItem.increaseItemQty(0);
                 
                 worldSpace.SetActive(true);
                 
