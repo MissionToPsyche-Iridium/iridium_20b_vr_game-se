@@ -21,7 +21,10 @@ public class GameOverScript : MonoBehaviour
     {
         credits.SetActive(false);
         gameOver.SetActive(true);
+        //gets score from ScoreItem
         scoreNumber.text = ScoreItem.getScore().ToString();
+        //gets silver qty from ScoreItem
+        silverText.text = ScoreItem.getSilverQty().ToString();
     }
 
     public void playButtonSound()
