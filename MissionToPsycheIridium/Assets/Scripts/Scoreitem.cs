@@ -7,12 +7,12 @@ public static class ScoreItem
 
 
     //static variables that any script can access and modify
-    public static int Score = 0;
-    public static int GoldScore = 0;
-    public static int SilverScore = 0;
-    public static int IronScore = 0;
-    public static int NickelScore = 0;
-    public static int ResearchScore = 0;
+    private static int Score = 0;
+    private static int GoldScore = 0;
+    private static int SilverScore = 0;
+    private static int IronScore = 0;
+    private static int NickelScore = 0;
+    private static int ResearchScore = 0;
 
     public static void increaseScore(int n)
     {
