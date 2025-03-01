@@ -25,6 +25,8 @@ public class GameOverScript : MonoBehaviour
         scoreNumber.text = ScoreItem.getScore().ToString();
         //gets silver qty from ScoreItem
         silverText.text = ScoreItem.getSilverQty().ToString();
+        //gets iron qty from ScoreItem
+        ironText.text = ScoreItem.getIronQty().ToString();
     }
 
     public void playButtonSound()
