@@ -54,6 +54,11 @@ public static class ScoreItem
         return IronScore;
     }
 
+    public static int getGoldQty()
+    {
+        return GoldScore;
+    }
+
     //gameover scene calls this to get static variable score.
     public static int getScore()
     {

@@ -10967,7 +10967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreNumber: {fileID: 607585051}
-  goldText: {fileID: 0}
+  goldText: {fileID: 33359290}
   nickelText: {fileID: 0}
   silverText: {fileID: 919931940}
   ironText: {fileID: 0}
