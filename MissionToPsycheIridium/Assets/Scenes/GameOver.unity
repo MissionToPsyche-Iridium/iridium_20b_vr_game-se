@@ -7281,7 +7281,6 @@ GameObject:
   - component: {fileID: 1006353010}
   - component: {fileID: 1006353009}
   - component: {fileID: 1006353008}
-  - component: {fileID: 1006353013}
   m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
@@ -7392,26 +7391,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.7, y: -39.77}
   m_SizeDelta: {x: 67.4268, y: 19.9196}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1006353013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006353007}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b778d40072a5faa43b3632c8ea667684, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreNumber: {fileID: 0}
-  goldText: {fileID: 0}
-  nickelText: {fileID: 0}
-  silverText: {fileID: 0}
-  ironText: {fileID: 0}
-  researchText: {fileID: 0}
-  credits: {fileID: 0}
-  gameOver: {fileID: 0}
 --- !u!1 &1014441813
 GameObject:
   m_ObjectHideFlags: 0
