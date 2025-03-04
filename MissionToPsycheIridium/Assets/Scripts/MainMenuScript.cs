@@ -57,7 +57,7 @@ public class MainMenuScript : MonoBehaviour
             SceneManager.LoadScene("MainGame");
         } else
         {
-            SceneManager.LoadScene("MainGame");
+            SceneManager.LoadScene("NewLevel");
         }
        
     }
