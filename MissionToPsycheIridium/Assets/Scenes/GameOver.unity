@@ -10949,8 +10949,8 @@ MonoBehaviour:
   goldText: {fileID: 33359290}
   nickelText: {fileID: 0}
   silverText: {fileID: 919931940}
-  ironText: {fileID: 0}
-  researchText: {fileID: 0}
+  ironText: {fileID: 472560370}
+  researchText: {fileID: 966233236}
   credits: {fileID: 263751629}
   gameOver: {fileID: 784058274}
 --- !u!4 &1762435995
