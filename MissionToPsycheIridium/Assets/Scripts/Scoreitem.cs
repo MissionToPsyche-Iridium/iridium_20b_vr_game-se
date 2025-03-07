@@ -43,15 +43,20 @@ public static class ScoreItem
         }
     }
 
-    
-    public static int getSilverQty()
-    {
-        return SilverScore;
-    }
 
     public static int getIronQty()
     {
         return IronScore;
+    }
+
+    public static int getNickelQty()
+    {
+        return NickelScore;
+    }
+
+    public static int getSilverQty()
+    {
+        return SilverScore;
     }
 
     public static int getGoldQty()

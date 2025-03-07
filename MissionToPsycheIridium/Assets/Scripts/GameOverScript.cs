@@ -23,10 +23,12 @@ public class GameOverScript : MonoBehaviour
         gameOver.SetActive(true);
         //gets score from ScoreItem
         scoreNumber.text = ScoreItem.getScore().ToString();
-        //gets silver qty from ScoreItem
-        silverText.text = ScoreItem.getSilverQty().ToString();
         //gets iron qty from ScoreItem
         ironText.text = ScoreItem.getIronQty().ToString();
+        //gets nickel qty from ScoreItem
+        nickelText.text = ScoreItem.getNickelQty().ToString();
+        //gets silver qty from ScoreItem
+        silverText.text = ScoreItem.getSilverQty().ToString();
         //gets gold qty from ScoreItem
         goldText.text = ScoreItem.getGoldQty().ToString();
         //gets research qty from ScoreItem
