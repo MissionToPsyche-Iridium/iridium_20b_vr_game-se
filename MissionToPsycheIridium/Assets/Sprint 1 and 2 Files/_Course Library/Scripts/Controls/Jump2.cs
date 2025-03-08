@@ -57,4 +57,20 @@ public class Jump2 : MonoBehaviour
         playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
     }
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag.Equals("plane"))
+        {
+            this.gameObject.transform.parent = collision.transform;
+        }
+    }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.tag.Equals("plane"))
+        {
+            this.gameObject.transform.parent = null;
+        }
+    }
+
 }
