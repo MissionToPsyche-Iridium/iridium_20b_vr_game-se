@@ -11129,7 +11129,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233085401}
   m_LocalRotation: {x: -0, y: 0.091862224, z: -0, w: 0.99577177}
-  m_LocalPosition: {x: 0, y: 0, z: -0.36}
+  m_LocalPosition: {x: 0, y: 0, z: -1.1}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11138,7 +11138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 10.542, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.81, y: 6.8}
+  m_AnchoredPosition: {x: -6.5, y: 6.8}
   m_SizeDelta: {x: 212.0693, y: 163.9761}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233085403
@@ -17687,7 +17687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.034}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.97, y: 7.53}
+  m_AnchoredPosition: {x: 6.39, y: 7.53}
   m_SizeDelta: {x: 288.4862, y: 195.8541}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &393507578
@@ -17753,7 +17753,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: The surface gravity on Psyche is much less than on Earth, and even less
-    than on the Moon. On Psychem lifting a car would feel as light as lifting a big
+    than on the Moon. On Psyche lifting a car would feel as light as lifting a big
     dog on Earth.
 --- !u!222 &393507581
 CanvasRenderer:
@@ -21212,7 +21212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.82, y: 5.99}
+  m_AnchoredPosition: {x: 2.151, y: 5.99}
   m_SizeDelta: {x: 346.582, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463808893
@@ -23543,7 +23543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.16, y: 8.03}
+  m_AnchoredPosition: {x: 12.02, y: 8.03}
   m_SizeDelta: {x: 296.1669, y: 163.802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500291330
@@ -25930,7 +25930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.88, y: 6.22}
+  m_AnchoredPosition: {x: 3.9, y: 6.22}
   m_SizeDelta: {x: 174.6431, y: 167.627}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &563468480
@@ -36610,7 +36610,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800259785}
   m_LocalRotation: {x: -0, y: 0.7338207, z: -0, w: 0.6793432}
-  m_LocalPosition: {x: 0, y: 0, z: -4.25}
+  m_LocalPosition: {x: 0, y: 0, z: -6.73}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36619,7 +36619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 94.415, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.05, y: 7.4699984}
+  m_AnchoredPosition: {x: 1.86, y: 7.4699984}
   m_SizeDelta: {x: 346.582, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800259787
@@ -46509,7 +46509,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001510198}
   m_LocalRotation: {x: -0, y: 0.576839, z: -0, w: 0.8168578}
-  m_LocalPosition: {x: 0, y: 0, z: -3.24}
+  m_LocalPosition: {x: 0, y: 0, z: -7.84}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46518,7 +46518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 70.457, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.19, y: 8.22}
+  m_AnchoredPosition: {x: 2.82, y: 8.22}
   m_SizeDelta: {x: 347.5185, y: 184.2267}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001510200
@@ -53266,7 +53266,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.29, y: 7.1}
+  m_AnchoredPosition: {x: 5.03, y: 7.1}
   m_SizeDelta: {x: 205.4565, y: 202.2083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1133450028
@@ -64790,7 +64790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.87, y: 7.86}
+  m_AnchoredPosition: {x: 8.63, y: 7.86}
   m_SizeDelta: {x: 335.5468, y: 205.0362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334977272
@@ -66853,7 +66853,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380246153}
   m_LocalRotation: {x: -0, y: -0.9810978, z: -0, w: 0.19351248}
-  m_LocalPosition: {x: 0, y: 0, z: -0.51}
+  m_LocalPosition: {x: 0, y: 0, z: 2.38}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -66862,7 +66862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -157.684, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.25, y: 8.254}
+  m_AnchoredPosition: {x: -5.64, y: 8.254}
   m_SizeDelta: {x: 356.9699, y: 214.9717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1380246155
@@ -76392,7 +76392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.17, y: 8.49}
+  m_AnchoredPosition: {x: 10.58, y: 8.49}
   m_SizeDelta: {x: 378.5155, y: 189.1673}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607523175
@@ -81499,7 +81499,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.46, y: 6.3959}
+  m_AnchoredPosition: {x: 7.38, y: 6.3959}
   m_SizeDelta: {x: 214.099, y: 180.4096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1738201018
@@ -86748,7 +86748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.06, y: 6.44}
+  m_AnchoredPosition: {x: 4.28, y: 6.44}
   m_SizeDelta: {x: 186.2915, y: 207.3239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871247152
@@ -88711,7 +88711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.04, y: 7.72}
+  m_AnchoredPosition: {x: 8.11, y: 7.72}
   m_SizeDelta: {x: 263.9892, y: 214.6703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914525049
