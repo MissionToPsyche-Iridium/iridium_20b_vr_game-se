@@ -45,7 +45,12 @@ public class GameManager : MonoBehaviour
     {
         if (!isGameOver)
         {
-            UpdateGameTimer();
+            /*This currently throws a NullRefException, when UpdateGameTimer() references
+             TimeTextBox.  In the MainGame scene, this references the TextMeshProUGUI object
+            within the 'f' object.  I'm unsure if we want a clock for this level, so I'm just
+            commenting it out for now.*/
+            
+            //UpdateGameTimer();
         }
         
     }
@@ -65,7 +70,7 @@ public class GameManager : MonoBehaviour
 
             timeTextBox.text = gameTimeClock;
         }
-        //need code here to reset timer after restart.  Or a new method?
+
         else
         {
             //Timer stops at 0
