@@ -50,7 +50,8 @@ public class GameManager : MonoBehaviour
             within the 'f' object.  I'm unsure if we want a clock for this level, so I'm just
             commenting it out for now.*/
             
-            //UpdateGameTimer();
+            UpdateGameTimer();
+            //commented in for demo -knangcas
         }
         
     }
