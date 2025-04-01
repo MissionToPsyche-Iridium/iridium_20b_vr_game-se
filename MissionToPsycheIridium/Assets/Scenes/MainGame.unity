@@ -10092,6 +10092,7 @@ MonoBehaviour:
   bgm: {fileID: 0}
   pauseBgm: {fileID: 0}
   initialPause: 0
+  player: {fileID: 0}
 --- !u!1 &282895952
 GameObject:
   m_ObjectHideFlags: 0
@@ -41363,6 +41364,7 @@ MonoBehaviour:
   bgm: {fileID: 1808361233}
   pauseBgm: {fileID: 985605129}
   initialPause: 0
+  player: {fileID: 2123205087}
 --- !u!4 &1103166242
 Transform:
   m_ObjectHideFlags: 0
@@ -79932,7 +79934,7 @@ Transform:
   m_GameObject: {fileID: 2123205087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.8866075, z: 0, w: 0.46252254}
-  m_LocalPosition: {x: 169.3, y: -42.5, z: -235.2}
+  m_LocalPosition: {x: 169.3, y: -42.5, z: 235.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

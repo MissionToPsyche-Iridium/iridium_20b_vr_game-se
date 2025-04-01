@@ -28,6 +28,10 @@ public class PauseMenu : MonoBehaviour
     public AudioSource pauseBgm;
     public bool initialPause;
     private bool isPaused = false;         // Tracks when game is paused
+    public GameObject player;
+    private Vector3 savedVelocity;
+    private Vector3 savedAngularVelocity;
+
 
 
     void Start()
@@ -88,6 +92,9 @@ public class PauseMenu : MonoBehaviour
         //Stop the timer
         gameManager.PauseTimer();
 
+        // Freeze player mid-air
+        player.GetComponent<Jump2>().PauseGame();
+
         // Enable ray interactors and disable direct interactors
         ToggleInteractors(true);
 
@@ -95,7 +102,6 @@ public class PauseMenu : MonoBehaviour
         if (leftmoveAction != null) leftmoveAction.action.Disable();
         if (rightmoveAction != null) rightmoveAction.action.Disable();
         if (jumpAction != null) jumpAction.action.Disable();
-
 
         // Position pause menu in front of the camera
         PositionPauseMenu();
@@ -111,6 +117,9 @@ public class PauseMenu : MonoBehaviour
 
         //Resume the timer
         gameManager.ResumeTimer();
+
+        // Resume player movement
+        player.GetComponent<Jump2>().ResumeGame();
 
         // Disable ray interactors and enable direct interactors
         ToggleInteractors(false);

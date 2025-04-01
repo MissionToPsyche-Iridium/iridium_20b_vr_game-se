@@ -10,12 +10,13 @@ public class Jump2 : MonoBehaviour
     public CharacterController charController;
     public float jumpHeight;
     private float gravityValue = -9.81f;
-
     private Vector3 playerVelocity;
-
     public bool jumpButtonReleased;
-
     private bool isTouchingGround;
+
+    private bool isPaused = false;
+    private Vector3 savedVelocity; // Store velocity
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +26,11 @@ public class Jump2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isPaused) return;
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         charController.Move(playerVelocity * Time.deltaTime);
+
         if (charController.isGrounded && playerVelocity.y < 0)
         {
             playerVelocity.y = 0f;
@@ -55,6 +58,25 @@ public class Jump2 : MonoBehaviour
         }
         GetComponent<AudioSource>().Play();
         playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+    }
+
+    // Called when pausing the game
+    public void PauseGame()
+    {
+        //Freeze player
+        isPaused = true;
+        savedVelocity = playerVelocity; 
+        playerVelocity = Vector3.zero;  
+        charController.enabled = false; 
+    }
+
+    // Called when resuming the game
+    public void ResumeGame()
+    {
+        //Unfreeze player
+        isPaused = false;
+        charController.enabled = true; 
+        playerVelocity = savedVelocity; 
     }
 
     private void OnTriggerEnter(Collider collision)
