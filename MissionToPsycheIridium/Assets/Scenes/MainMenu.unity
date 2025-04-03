@@ -239,27 +239,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1497500086}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &41001141
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41001139}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.019080458, y: 0.01927537, z: 0.015205287}
-  m_Center: {x: -0.00012030918, y: -0.00015103907, z: -0.0022651334}
 --- !u!114 &41001142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,7 +681,6 @@ GameObject:
   - component: {fileID: 94298451}
   - component: {fileID: 94298450}
   - component: {fileID: 94298449}
-  - component: {fileID: 94298448}
   - component: {fileID: 94298453}
   m_Layer: 0
   m_Name: Iron
@@ -734,27 +712,6 @@ Transform:
   - {fileID: 1100869444}
   m_Father: {fileID: 846496419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &94298448
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94298446}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.93, y: 3.95, z: 3.23}
-  m_Center: {x: 0, y: 0.54, z: 0}
 --- !u!114 &94298449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1187,7 +1144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &115050474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3165,7 +3122,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.2, y: 27.5}
+  m_AnchoredPosition: {x: 8.1, y: 27.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &429418430
@@ -5246,8 +5203,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 27.36
+  m_fontSizeBase: 27.36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5256,11 +5213,11 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_characterSpacing: 9.01
+  m_wordSpacing: 1.5
+  m_lineSpacing: 6.93
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: -0.35
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
@@ -6160,7 +6117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &846496419
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8525,7 +8482,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 1.71
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -9381,7 +9338,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1261899739}
-  - component: {fileID: 1261899743}
   - component: {fileID: 1261899742}
   - component: {fileID: 1261899741}
   - component: {fileID: 1261899744}
@@ -9587,27 +9543,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1261899743
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261899738}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.58, y: 1.21, z: 1.31}
-  m_Center: {x: 0.74, y: 0.85, z: 1.05}
 --- !u!114 &1261899744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11259,10 +11194,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6978e3fd675fa4c6ca1c5a72e62911e9,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 41001141}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6978e3fd675fa4c6ca1c5a72e62911e9,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 41001147}
   m_SourcePrefab: {fileID: 100100000, guid: 6978e3fd675fa4c6ca1c5a72e62911e9, type: 3}
 --- !u!1 &1503835436
@@ -12400,7 +12331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.666634, y: 44.599976}
+  m_AnchoredPosition: {x: 15.9, y: 45.4}
   m_SizeDelta: {x: 420.651, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1721430798
@@ -15017,7 +14948,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2144144514}
-  - component: {fileID: 2144144518}
   - component: {fileID: 2144144517}
   - component: {fileID: 2144144516}
   - component: {fileID: 2144144515}
@@ -15181,27 +15111,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &2144144518
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2144144513}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 57.8, y: 14.5, z: 76.68}
-  m_Center: {x: 0.73, y: 8.1, z: -1.01}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
