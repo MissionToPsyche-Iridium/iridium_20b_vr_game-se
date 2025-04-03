@@ -45,6 +45,7 @@ public class GameOverScript : MonoBehaviour
 
         Debug.Log("restart button pressed");
         playButtonSound();
+        ScoreItem.resetScores();
         SceneManager.LoadScene("MainGame");
     }
 
@@ -61,6 +62,7 @@ public class GameOverScript : MonoBehaviour
     public void mainMenuButton()
     {
         playButtonSound();
+        ScoreItem.resetScores();
         SceneManager.LoadScene("MainMenu");
     }
 

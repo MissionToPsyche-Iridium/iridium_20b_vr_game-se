@@ -21,25 +21,25 @@ public static class ScoreItem
 
     public static void increaseItemQty(int n)
     {
-        if (n == 1)
+        switch (n)
         {
-            IronScore++;
-        }
-        if (n == 2)
-        {
-            NickelScore++;
-        }
-        if (n==3)
-        {
-            SilverScore++;
-        }
-        if (n == 5)
-        {
-            GoldScore++;
-        }
-        if (n == 0)
-        {
-            ResearchScore++;
+            case 0:
+                ResearchScore++;
+                break;
+            case 1:
+                IronScore++;
+                break;
+            case 2:
+                NickelScore++;
+                break;
+            case 3:
+                SilverScore++;
+                break;
+            case 5:
+                GoldScore++;
+                break;
+            default:
+                break;
         }
     }
 
@@ -81,5 +81,14 @@ public static class ScoreItem
         Score = n;
     }
 
+    public static void resetScores()
+    {
+        Score = 0;
+        GoldScore = 0;
+        SilverScore = 0;
+        IronScore = 0;
+        NickelScore = 0;
+        ResearchScore = 0;
+    }
 
 }
