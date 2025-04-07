@@ -1,8 +1,7 @@
 # PSYCHE SCRAPER
 
 ## Arizona State University
-
-## Developed by Team 33: Kevin Nangcas, Shannon Ray, Erik Sousa, Chad Valente. 
+# Developed by Team 33: Kevin Nangcas, Shannon Ray, Erik Sousa, Chad Valente. 
 
 
 ## Project Description
