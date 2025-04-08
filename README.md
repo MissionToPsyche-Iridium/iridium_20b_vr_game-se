@@ -19,7 +19,7 @@ Psyche Scraper is tailored for event settings, featuring an “Event Mode” des
 2. Transfer the APK to headset. We used [Sidequest](https://sidequestvr.com) to do this. Tutorial [here](https://help.motive.io/space/STOR/1607696451/Installing+an+APK+using+SideQuest+Guide)
    ![ss1](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/Sprint10/MissionToPsycheIridium/Assets/ss1.JPG?raw=true)
 3. Navigate to the library in headset.
-4. Find the "Unknown sources" tab on the left.
+4. Find the "Unknown sources" tab on the bottom left navigation bar.
    ![ss3](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/Sprint10/MissionToPsycheIridium/Assets/ss3.JPG?raw=true)
 5. Select game to launch! 
 
