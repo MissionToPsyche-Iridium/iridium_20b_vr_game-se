@@ -26,10 +26,10 @@ Psyche Scraper is tailored for event settings, featuring an “Event Mode” des
 
 ## Credits
 
-Textures (Planets) - Evgenii Nikolskii
-Textures (Terrain) - Terramorph Workshop
-Asteroid Models - Mark Dion & Entian-Astea
-Skybox - Sean Duffy
-Music - alkabrab game sound, Michael Macasiano
-Sound Effects - Phat Phrog Studio, leohpaz, hoveaudio, GwriterStudio
+Textures (Planets) - Evgenii Nikolskii  
+Textures (Terrain) - Terramorph Workshop  
+Asteroid Models - Mark Dion & Entian-Astea  
+Skybox - Sean Duffy  
+Music - alkabrab game sound, Michael Macasiano  
+Sound Effects - Phat Phrog Studio, leohpaz, hoveaudio, GwriterStudio  
 Information sourced from the Psyche Mission Press Kit and FAQ, Arizona State University (2023). Retrieved from psyche.asu.edu.
