@@ -1,4 +1,4 @@
-# PSYCHE SCRAPER
+ # PSYCHE SCRAPER
 
 ## Arizona State University
 ### Developed by Team 33: Kevin Nangcas, Shannon Ray, Erik Sousa, Chad Valente. 
@@ -23,3 +23,13 @@ Psyche Scraper is tailored for event settings, featuring an “Event Mode” des
    ![ss3](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/Sprint10/MissionToPsycheIridium/Assets/ss3.JPG?raw=true)
 5. Select game to launch! 
 
+
+## Credits
+
+Textures (Planets) - Evgenii Nikolskii
+Textures (Terrain) - Terramorph Workshop
+Asteroid Models - Mark Dion & Entian-Astea
+Skybox - Sean Duffy
+Music - alkabrab game sound, Michael Macasiano
+Sound Effects - Phat Phrog Studio, leohpaz, hoveaudio, GwriterStudio
+Information sourced from the Psyche Mission Press Kit and FAQ, Arizona State University (2023). Retrieved from psyche.asu.edu.
