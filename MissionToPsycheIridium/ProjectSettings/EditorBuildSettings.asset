@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Sprint 1 and 2 Files/Scenes/Create-with-VR-Starter-Scene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 051bd457d3cf8434e861d9ee78a9fd97
@@ -20,12 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 7685436074cf8d0418dc8ac09c618188
-  - enabled: 0
-    path: Assets/Scenes/NewLevel.unity
-    guid: 1aac1cf7c09194b4ca34e1e8b11ef4d0
-  - enabled: 0
-    path: Assets/Scenes/NormalLevelGameOver.unity
-    guid: d6b75527c1481da40bb5e331942b8646
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed72be55522c8448bae8b0d66fa21adf,
       type: 2}
