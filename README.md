@@ -10,6 +10,8 @@ Psyche Scraper is a Virtual Reality space game that is based off of an existing 
 
 Psyche Scraper is tailored for event settings, featuring an “Event Mode” designed for players of all ages. This mode offers a three-minute gameplay session, providing a complete VR experience while keeping wait times between players minimal. The experience engages the public and raises awareness about NASA’s Psyche mission by immersing players in an interactive journey inspired by the asteroids exploration. 
 
+## Video Demonstration
+![Demo Video](https://www.youtube.com/watch?v=3tSXgDFGCtc)
 
 ## How to Launch
 
