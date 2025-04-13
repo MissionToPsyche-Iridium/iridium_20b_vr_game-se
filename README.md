@@ -1,5 +1,7 @@
  # PSYCHE SCRAPER
 
+ ![ss9](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss9.JPG?raw=true)
+
 ## Arizona State University
 ### Developed by Team 33: Kevin Nangcas, Shannon Ray, Erik Sousa, Chad Valente. 
 
@@ -23,8 +25,53 @@ Psyche Scraper is tailored for event settings, featuring an “Event Mode” des
    ![ss1](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/Sprint10/MissionToPsycheIridium/Assets/ss1.JPG?raw=true)
 3. Navigate to the library in headset.
 4. Find the "Unknown sources" tab on the bottom left navigation bar.
-   ![ss3](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/Sprint10/MissionToPsycheIridium/Assets/ss3.JPG?raw=true)
+   ![ss3](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/Assets/ss3.JPG?raw=true)
 5. Select game to launch! 
+
+## Screenshots
+
+![ss1](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss1JPG.JPG?raw=true)
+
+Main Menu
+
+![ss2](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss2.JPG?raw=true)
+
+Tutorial 
+
+
+![ss3](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss3.JPG?raw=true)
+
+In Game
+
+
+![ss4](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss4.JPG?raw=true)
+
+In Game Fact
+
+
+![ss5](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss5.JPG?raw=true)
+
+In Game Fact 2
+
+
+![ss6](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss6.JPG?raw=true)
+
+Psyche spacecraft
+
+
+![ss7](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss7.JPG?raw=true)
+
+Game Over Screen
+
+
+![ss8](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss8.JPG?raw=true)
+
+
+Credits
+
+## Known Issues
+- Small hole in bridge
+- Fact bubbles sometimes offset depending on player POV.
 
 
 ## Credits
