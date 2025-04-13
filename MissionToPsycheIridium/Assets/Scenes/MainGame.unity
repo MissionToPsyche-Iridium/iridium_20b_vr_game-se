@@ -37841,7 +37841,7 @@ MonoBehaviour:
   bgm: {fileID: 1808361233}
   pauseBgm: {fileID: 985605129}
   initialPause: 0
-  player: {fileID: 0}
+  player: {fileID: 2123205087}
 --- !u!4 &1103166242
 Transform:
   m_ObjectHideFlags: 0
@@ -42167,7 +42167,7 @@ Transform:
   m_GameObject: {fileID: 1204839500}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1, y: -38.1, z: -268.322}
+  m_LocalPosition: {x: -3.1, y: -35.94, z: -268.322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
