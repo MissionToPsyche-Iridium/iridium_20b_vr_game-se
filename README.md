@@ -29,7 +29,11 @@ Psyche Scraper is tailored for event settings, featuring an “Event Mode” des
 3. Navigate to the library in headset.
 4. Find the "Unknown sources" tab on the bottom left navigation bar.
    ![ss3](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/Assets/ss3.JPG?raw=true)
-5. Select game to launch! 
+5. Select game to launch!
+
+### Using Unity
+if you would like to build this in Unity, The version used was 2022.3.47f1 LTS.
+
 
 ## Screenshots
 
@@ -89,7 +93,7 @@ Information sourced from the Psyche Mission Press Kit and FAQ, Arizona State Uni
 
 ## Tools used
 Blender 
-Unity version 2022.3.47f1
+Unity version 2022.3.47f1 LTS
 C# Programming Language
 
 ## Disclaimer
