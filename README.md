@@ -12,6 +12,9 @@ Psyche Scraper is a Virtual Reality space game that is based off of an existing 
 
 Psyche Scraper is tailored for event settings, featuring an “Event Mode” designed for players of all ages. This mode offers a three-minute gameplay session, providing a complete VR experience while keeping wait times between players minimal. The experience engages the public and raises awareness about NASA’s Psyche mission by immersing players in an interactive journey inspired by the asteroids exploration. 
 
+
+
+
 ## Video Demonstration
 
 [![YouTube](http://i.ytimg.com/vi/3tSXgDFGCtc/hqdefault.jpg)](https://www.youtube.com/watch?v=3tSXgDFGCtc)
@@ -83,3 +86,12 @@ Skybox - Sean Duffy
 Music - alkabrab game sound, Michael Macasiano  
 Sound Effects - Phat Phrog Studio, leohpaz, hoveaudio, GwriterStudio  
 Information sourced from the Psyche Mission Press Kit and FAQ, Arizona State University (2023). Retrieved from psyche.asu.edu.
+
+## Tools used
+Blender 
+Unity version 2022.3.47f1
+C# Programming Language
+
+## Disclaimer
+
+This work was created in partial fulfillment of Arizona State University Capstone Course “SER401/SER402″. The work is a result of the Psyche Student Collaborations component of NASA’s Psyche Mission (https://psyche.asu.edu). “Psyche: A Journey to a Metal World” [Contract number NNM16AA09C] is part of the NASA Discovery Program mission to solar system targets. Trade names and trademarks of ASU and NASA are used in this work for identification only. Their usage does not constitute an official endorsement, either expressed or implied, by Arizona State University or National Aeronautics and Space Administration. The content is solely the responsibility of the authors and does not necessarily represent the official views of ASU or NASA.
