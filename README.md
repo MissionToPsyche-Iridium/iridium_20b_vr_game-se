@@ -33,6 +33,18 @@ Psyche Scraper is tailored for event settings, featuring an “Event Mode” des
 
 ### Using Unity
 if you would like to build this in Unity, The version used was 2022.3.47f1 LTS.
+1. Download Unity [here](https://unity.com/download)
+2. Open project in Unity.
+
+![how1](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/howto1.png?raw=true)
+4. File > Build Settings
+
+![how2](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/howto2.png?raw=true)
+5. Build
+
+This will build an APK which you can transfer to your headset. 
+
+
 
 
 ## Screenshots
