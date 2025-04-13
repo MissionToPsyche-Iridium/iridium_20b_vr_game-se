@@ -29,7 +29,7 @@ Psyche Scraper is tailored for event settings, featuring an “Event Mode” des
 3. Navigate to the library in headset.
 4. Find the "Unknown sources" tab on the bottom left navigation bar.
    ![ss3](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/Assets/ss3.JPG?raw=true)
-5. Select game to launch!
+5. Select game to launch! (Note, the latest APK file has the game renamed to "PSYCHE SCRAPER" and not "VR SPACE GAME"
 
 ### Using Unity
 if you would like to build this in Unity, The version used was 2022.3.47f1 LTS.
@@ -51,7 +51,7 @@ This will build an APK which you can transfer to your headset.
 
 ![ss1](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss1JPG.JPG?raw=true)
 
-Main Menu
+Main Menu. Start game leads to the event mode. 
 
 ![ss2](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/main/MissionToPsycheIridium/screenshots/iss2.JPG?raw=true)
 
