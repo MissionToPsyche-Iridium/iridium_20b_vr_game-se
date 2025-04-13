@@ -23,7 +23,7 @@ Psyche Scraper is tailored for event settings, featuring an “Event Mode” des
 
 ### Using the APK file with META QUEST2/3
 
-1. Download the APK file here (link to apk, provided on google drive).
+1. Download the APK file [here](https://drive.google.com/file/d/1ltWj0bBxJgQS2QGEPzgfcgw9r10a7GMP/view?usp=sharing).
 2. Transfer the APK to headset. We used [Sidequest](https://sidequestvr.com) to do this. Tutorial [here](https://help.motive.io/space/STOR/1607696451/Installing+an+APK+using+SideQuest+Guide)
    ![ss1](https://github.com/MissionToPsyche-Iridium/iridium_20b_vr_game-se/blob/Sprint10/MissionToPsycheIridium/Assets/ss1.JPG?raw=true)
 3. Navigate to the library in headset.
